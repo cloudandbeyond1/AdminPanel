@@ -6,11 +6,8 @@ const Footer = () => {
       <div className="footer">
          <div className="copyright">
             <p>
-               Copyright © Designed &amp; Developed by{" "}
-               <Link to="http://dexignzone.com/" target="_blank">
-                  DexignZone
-               </Link>{" "}
-               2020
+               Copyright © New Do Hospitality 
+               2023
             </p>
          </div>
       </div>
