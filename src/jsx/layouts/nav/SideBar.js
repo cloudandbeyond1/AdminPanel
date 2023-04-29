@@ -237,7 +237,7 @@ class SideBar extends Component {
                   <p>
                      <strong>Koki Restaurant React Dashboard</strong> ©All Rights Reserved
                   </p>
-                  <p>by DexignZone</p>
+                  {/* <p>by DexignZone</p> */}
                </div>
             </PerfectScrollbar>
          </div>
