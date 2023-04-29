@@ -6,8 +6,7 @@ const Footer = () => {
       <div className="footer">
          <div className="copyright">
             <p>
-               Copyright © New Do Hospitality 
-               2023
+               Copyright © New Do Hospitality 2023
             </p>
          </div>
       </div>
