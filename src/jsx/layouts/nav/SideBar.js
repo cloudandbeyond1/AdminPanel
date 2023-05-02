@@ -233,7 +233,7 @@ class SideBar extends Component {
 				</div>
                <div className="copyright">
                   <p>
-                     <strong>Koki Restaurant React Dashboard</strong> ©All Rights Reserved
+                     <strong>New Do Hospitality</strong> ©All Rights Reserved
                   </p>
                   {/* <p>by DexignZone</p> */}
                </div>
