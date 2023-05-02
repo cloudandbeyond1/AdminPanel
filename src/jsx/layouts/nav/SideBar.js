@@ -248,6 +248,10 @@ class SideBar extends Component {
 					<Link className="btn bg-white text-black btn-rounded d-block" to="#">+Add Menus</Link>
 				</div>
                <div className="copyright">
+                  {/* <p>
+                     <strong>Koki Restaurant React Dashboard</strong> ©All Rights Reserved
+                  </p>
+                  <p>by DexignZone</p> */}
                   <p>
                      <strong>New Do Hospitality</strong> ©All Rights Reserved
                   </p>
