@@ -196,7 +196,7 @@ class SideBar extends Component {
                         
                      >
                         <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Pages</span>
+                        <span className="nav-text">Customer List</span>
                      </Link>
                      <ul >
                         <li>
