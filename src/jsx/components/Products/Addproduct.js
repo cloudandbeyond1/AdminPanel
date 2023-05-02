@@ -107,6 +107,7 @@ class Addproduct extends React.Component {
 		   </div>
   </div>
   </Fragment>
+
     );
   }
 }
