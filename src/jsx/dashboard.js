@@ -8,6 +8,9 @@ import "./index.css";
 import "./chart.css";
 
 /// Layout
+import Nav from "./layouts/nav";
+import Footer from "./layouts/Footer";
+
 
 /// Pages
 import Registration from "./pages/Registration";
@@ -18,32 +21,45 @@ import ForgotPassword from "./pages/ForgotPassword";
 /// Widget
 
 /// Deshboard
-import Login from "./pages/Login";
 
+
+import Home from "./components/Dashboard/Home/Home";
+import Companies from "./components/Dashboard/Companies/Companies";
+import Analytics from "./components/Dashboard/Analytics/Analytics";
+import Review from "./components/Dashboard/Review/Review";
+import Order from "./components/Dashboard/Order/Order";
+import Orderlist from "./components/Dashboard/Orderlist/Orderlist";
+import Customerlist from "./components/Dashboard/Customerlist/Customerlist";
 /// Bo
-import Dash from "./dashboard";
+
 /// App
 /// Product List
 import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
 
 
-const Markup = () => {
+const Dash = () => {
    const routes = [
 		/// Deshborad
-		{ url: "", component: Login },
-		
 		{ url: "Add-Product", component: Addproduct },
 		{ url: "List-Product", component: ListProduct },
-		{ url: "Dash", component: Dash },
+		{ url: "", component: Home },
+		{ url: "companies", component: Companies },
+		{ url: "analytics", component: Analytics },
+		{ url: "review", component: Review },
+		{ url: "order", component: Order },
+		{ url: "order-list", component: Orderlist },
+		{ url: "customer-list", component: Customerlist },
    ];
 
    return (
 		
 			<Router basename="/react">
-				
-					<div id="main-wrapper" className="show">
-						{/* <Nav /> */}
+
+				<div id="main-wrapper" className="show">
+					
+						<Nav />
+						<div className="content-body">
 						<div className="container-fluid">
 							<Switch>
 								{routes.map((data, i) => (
@@ -56,12 +72,13 @@ const Markup = () => {
 								))}
 							</Switch>
 						</div>
-						{/* <Footer /> */}
-					</div>
+						</div>
+						<Footer />
+				</div>
 				
 			</Router>
 				
     );
 };
 
-export default Markup;
+export default Dash;

@@ -196,7 +196,7 @@ class SideBar extends Component {
                         
                      >
                         <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Pages</span>
+                        <span className="nav-text">Customer List</span>
                      </Link>
                      <ul >
                         <li>
@@ -226,18 +226,23 @@ class SideBar extends Component {
 
                   </li>
                  
-                 
-                 
                </MM>
 				<div className="plus-box">
 					<p className="fs-13 font-w300 mb-4">Organize your menus through button bellow</p>
 					<Link className="btn bg-white text-black btn-rounded d-block" to="#">+Add Menus</Link>
 				</div>
                <div className="copyright">
+<<<<<<< HEAD
                   {/* <p>
                      <strong>Koki Restaurant React Dashboard</strong> ©All Rights Reserved
                   </p>
                   <p>by DexignZone</p> */}
+=======
+                  <p>
+                     <strong>New Do Hospitality</strong> ©All Rights Reserved
+                  </p>
+                  {/* <p>by DexignZone</p> */}
+>>>>>>> 023ba87088c37aca00b3bc680c08ffadace39ad7
                </div>
             </PerfectScrollbar>
          </div>
