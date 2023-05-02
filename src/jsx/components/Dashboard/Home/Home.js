@@ -192,7 +192,7 @@ const Home = () => {
 					<div className="card-header border-0">
 						<div>
 							<h4 className="card-title mb-2">Recent Order Request</h4>
-							<p className="fs-13 mb-0">Lorem ipsum dolor</p>
+							
 						</div>
 						<div className="dropdown">
 							<button type="button" className="btn border btn-rounded text-black dropdown-toggle" data-toggle="dropdown">
@@ -548,7 +548,7 @@ const Home = () => {
 					<div className="card-header border-0">
 						<div>
 							<h4 className="card-title mb-2">Daily Trending Menus</h4>
-							<p className="mb-0 fs-14">Lorem ipsum dolor</p>
+							
 						</div>
 					</div>
 					<div className="card-body px-0 pt-0 pb-2">

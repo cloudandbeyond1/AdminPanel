@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 /// Scroll
 import PerfectScrollbar from "react-perfect-scrollbar";
-
+import check from "../../../images/dashicons/check.png";
+import categorymenu from "../../../images/dashicons/categorymenu.png";
+import forkmenu from "../../../images/dashicons/forkmenu.png";
+import ordermenu from "../../../images/dashicons/ordermenu.png";
 /// Menu
 import MetisMenu from "metismenujs";
 
@@ -44,6 +47,15 @@ class SideBar extends Component {
    render() {
       /// Path
       const path = window.location.pathname;
+
+      const styles = {
+         imgicon: {
+           height: "25px",
+           width: "25px",
+          
+         },
+         
+        }
 
       /// Active menu
       let deshBoard = [
@@ -108,7 +120,8 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-internet"></i>
+                        {/* <i className="flaticon-381-internet"></i> */}
+                        <img src={forkmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Restaurant</span>
                      </Link>
                      <ul >
@@ -153,7 +166,8 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Category</span>
                      </Link>
                      <ul >
@@ -176,7 +190,8 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Orders</span>
                      </Link>
                      <ul >
@@ -220,7 +235,8 @@ class SideBar extends Component {
                         className="ai-icon"
                         
                      >
-                        <i className="flaticon-381-settings-2"></i>
+                        {/* <i className="flaticon-381-settings-2"></i> */}
+                        <img src={check} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Settings</span>
                      </Link>
 
