@@ -1,7 +1,5 @@
 import React ,{ Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//Success POPUP
-import Swal from 'sweetalert2'
 
 class Addproduct extends React.Component {
   constructor(props)
@@ -11,8 +9,6 @@ class Addproduct extends React.Component {
   render() {
     return (
 		<Fragment>
-		{/* <PageTitle headingPara="Validation" activeMenu="Validation" motherMenu="Form" /> */}
-
 		<div className="row">
 		   <div className="col-lg-12">
 			  <div className="card">
