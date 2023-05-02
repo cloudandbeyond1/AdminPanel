@@ -1,6 +1,7 @@
-import React from 'react';
+import React ,{ Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import PageTitle from "../../layouts/PageTitle";
+import { Link } from "react-router-dom";
 //For API Requests
 import axios from 'axios';
 
@@ -51,7 +52,7 @@ const headers = {
          })
              .then(res=>
         {
-  
+   
       this.myFormRef.reset();
       //Success Message in Sweetalert modal
       Swal.fire({
@@ -67,66 +68,107 @@ const headers = {
   
   render() {
     return (
-      <div className="MainDiv">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#">Therichpost</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-        </nav>
+		<Fragment>
+		{/* <PageTitle headingPara="Validation" activeMenu="Validation" motherMenu="Form" /> */}
 
-        <div class="container main-container">
-
-          <div class="row">
-
-            <div class="col-lg-12">
-              <h1 className="text-center mt-5 mb-5">Reactjs Eccommerce Site - Add Product</h1>
-
-              <form ref={(el) => this.myFormRef = el} className="mt-5 mb-5">
-                <div className="form-group">
-                <input type="text" className="form-control" id="productname" placeholder="Enter Product Name" ref="productname" />
-                </div>
-                <div className="form-group">
-                <input type="text" className="form-control" id="price" placeholder="Product Price" ref="productprice" />
-                </div>
-                <div className="form-group">
-                <label for="image">Product Image:</label>
-                <input onChange={ (e) => this.handleChange(e.target.files) } type="file" className="form-control" id="image" ref="productimage" />
-                </div>
-                <div className="form-group">
-                <label for="comment">Product Description:</label>
-                <textarea class="form-control" rows="5" id="productdesc" ref="productdesc"></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary" onClick={this.addFormData}>Submit</button>
-            </form>
-
-              
-
-            </div>
-            
-
-            
-           
-
-          </div>
-        
-
-        </div>
-       
-       
-      </div>
+		<div className="row">
+		   <div className="col-lg-12">
+			  <div className="card">
+				 <div className="card-header">
+					<h4 className="card-title">Add Product</h4>
+				 </div>
+				 <div className="card-body">
+					<div className="form-validation">
+					   <form
+						  className="form-valide"
+						  action="#"
+						  method="post"
+						  onSubmit={(e) => e.preventDefault()}
+					   >
+						  <div className="row">
+							 <div className="col-xl-8">
+								<div className="form-group row">
+								<label className="col-sm-2 col-form-label col-form-label-sm">
+									  Product Name
+									  <span className="text-danger">*</span>
+								   </label>
+								   <div className="col-sm-10">								
+									  <input
+										 type="text"
+										 className="form-control"
+										 id="val-username"
+										 name="val-username"
+										 placeholder="Enter a Product Name.."
+									  />
+								   </div>
+								</div>
+								<div className="form-group row">
+								<label className="col-sm-2 col-form-label col-form-label-sm">
+									 Price
+									  <span className="text-danger">*</span>
+								   </label>
+								   <div className="col-sm-10">	
+									  <input
+										 type="number"
+										 className="form-control"
+										 id="val-email"
+										 name="val-email"
+										 placeholder="Enter Price"
+									  />
+								   </div>
+								</div>
+																
+								<div className="form-group row">
+								<label className="col-sm-2 col-form-label col-form-label-sm">
+									  Description{" "}
+									  <span className="text-danger">*</span>
+								   </label>
+								   <div className="col-sm-10">	
+									  <textarea
+										 className="form-control"
+										 id="val-suggestions"
+										 name="val-suggestions"
+										 rows="5"
+										 placeholder="What would you like to see?"
+									  ></textarea>
+								   </div>
+								</div>
+								<div className="form-group row">
+								<label className="col-sm-2 col-form-label col-form-label-sm">
+									  Upload Image{" "}
+									  <span className="text-danger">*</span>
+								   </label>
+								   <div className="col-sm-10">	
+                              <div className="custom-file">
+                                 <input
+                                    type="file"
+                                    className="custom-file-input"
+                                 />
+                                 <label className="custom-file-label">
+                                    Choose file
+                                 </label>
+                              </div>
+                           </div>
+						   </div>
+							 <div className="form-group row">
+								   <div className="col-lg-12 justify-content-center d-flex">
+									  <button
+										 type="submit"
+										 className="btn btn-primary"
+									  >
+										 Submit
+									  </button>
+								   </div>
+								</div>
+								</div>
+						  </div>
+					   </form>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+  </div>
+  </Fragment>
     );
   }
 }
