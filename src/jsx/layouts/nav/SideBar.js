@@ -66,6 +66,7 @@ class SideBar extends Component {
 			
          ],
         
+         Customerlist = ["Add-Customer-list"],
 
          Product = ["Add-Product","List-Product"];
 
@@ -211,7 +212,7 @@ class SideBar extends Component {
                         
                      >
                         <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Customer List</span>
+                        <span className="nav-text">Profile</span>
                      </Link>
                      <ul >
                         <li>
@@ -223,6 +224,22 @@ class SideBar extends Component {
                         
                       
                      </ul>
+                  </li>
+                  <li
+                     className={`${
+                        Customerlist.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                    
+                     <Link
+                        to="Add-Customer-list"
+                        className="ai-icon"
+                        
+                     >
+                        <i className="flaticon-381-settings-2"></i>
+                        <span className="nav-text">Customer List</span>
+                     </Link>
+
                   </li>
                   <li
                      className={`${

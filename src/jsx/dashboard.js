@@ -29,14 +29,12 @@ import Analytics from "./components/Dashboard/Analytics/Analytics";
 import Review from "./components/Dashboard/Review/Review";
 import Order from "./components/Dashboard/Order/Order";
 import Orderlist from "./components/Dashboard/Orderlist/Orderlist";
-import Customerlist from "./components/Dashboard/Customerlist/Customerlist";
-/// Bo
 
 /// App
 /// Product List
 import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
-
+import Customerlist from "./components/Customer/Customerlist";
 
 const Dash = () => {
    const routes = [
@@ -49,7 +47,7 @@ const Dash = () => {
 		{ url: "review", component: Review },
 		{ url: "order", component: Order },
 		{ url: "order-list", component: Orderlist },
-		{ url: "customer-list", component: Customerlist },
+		{url: "Add-Customer-list", component: Customerlist },
    ];
 
    return (
