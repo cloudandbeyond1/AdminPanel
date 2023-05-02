@@ -226,8 +226,6 @@ class SideBar extends Component {
 
                   </li>
                  
-                 
-                 
                </MM>
 				<div className="plus-box">
 					<p className="fs-13 font-w300 mb-4">Organize your menus through button bellow</p>

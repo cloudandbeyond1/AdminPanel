@@ -12,6 +12,8 @@ const Login = () => {
       e.preventDefault();
       
    };
+
+   
    return (
       <div className="row justify-content-center h-100 align-items-center h-80">
          <div className="col-md-6">
@@ -31,16 +33,17 @@ const Login = () => {
                            <div className="form-row d-flex justify-content-between mt-4 mb-2">
                               <div className="form-group">
                                  <div className="custom-control custom-checkbox ml-1 ">
-                                    <input  type="checkbox" className="custom-control-input"   id="basic_checkbox_1"  />
-                                    <label    className="custom-control-label" htmlFor="basic_checkbox_1"  >  Remember my preference </label>
-								</div>
+                                    <input type="checkbox" className="custom-control-input" id="basic_checkbox_1"  />
+                                    <label className="custom-control-label" htmlFor="basic_checkbox_1"  >  Remember my preference </label>
+								      </div>
                               </div>
                               <div className="form-group">
-                                 <Link  className=""  to="/page-forgot-password"  > Forgot Password?  </Link>
+                                 <Link className=""  to="/page-forgot-password"> Forgot Password?  </Link>
                               </div>
                            </div>
                            <div className="text-center">
-                              <button  type="submit"  className="btn btn-primary btn-block"  onClick={() => submitHandler} > Sign Me In </button>
+                              <Link to="/Add-Product">Add Product</Link>
+                              <Link to="/Dash"><button  type="submit"  className="btn btn-primary btn-block"  onClick={() => submitHandler} > Sign Me In </button></Link>
                            </div>
                         </form>
                         <div className="new-account mt-3">
