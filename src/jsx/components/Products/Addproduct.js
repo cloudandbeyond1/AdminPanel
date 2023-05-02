@@ -1,10 +1,5 @@
 import React ,{ Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PageTitle from "../../layouts/PageTitle";
-import { Link } from "react-router-dom";
-//For API Requests
-import axios from 'axios';
-
 //Success POPUP
 import Swal from 'sweetalert2'
 
@@ -12,60 +7,7 @@ class Addproduct extends React.Component {
   constructor(props)
     {
       super(props);
-      
-      // this.state = {
-      //   imagedata : String
-      // };
-      this.addFormData = this.addFormData.bind(this);
-      this.handleChange = this.handleChange.bind(this);
     }
-
-    //FileChange
-    handleChange(file)
-    {
-      this.setState({ 
-        imagedata: file[0],
-      })
-    }
-    //Form Submission
-    addFormData(evt)
-      {
-        evt.preventDefault();
-        const fd = new FormData();
-        fd.append('productname', "Testbtr");
-        fd.append('productprice', "gfdg");
-       // fd.append('productimage', this.state.imagedata);
-        fd.append('productdesc', "fgdf");
-        
-      //   axios.post('https://api.chec.io/v1/products', fd
-      //   ).then(res=>
-const headers = {
-    "X-Authorization": "sk_test_5172686a5fb9362d98b0400373095dcaf3fb18c7fcd1e",
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-};
-
-      fetch("https://api.chec.io/v1/products", {
-             method: "POST",
-             body: fd,
-             headers: headers,
-         })
-             .then(res=>
-        {
-   
-      this.myFormRef.reset();
-      //Success Message in Sweetalert modal
-      Swal.fire({
-        title: 'Product has been added successfully.',
-        text: "Thanks",
-        type: 'success',
-        
-      });
-      
-      }
-      );
-      }
-  
   render() {
     return (
 		<Fragment>
