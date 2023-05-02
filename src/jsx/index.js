@@ -28,6 +28,8 @@ import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
 
 
+import Customerlist from "./components/Customer/Customerlist";
+
 const Markup = () => {
    const routes = [
 		/// Deshborad
@@ -36,6 +38,7 @@ const Markup = () => {
 		{ url: "Add-Product", component: Addproduct },
 		{ url: "List-Product", component: ListProduct },
 		{ url: "Dash", component: Dash },
+		{ url: "Add-Customer-list", component: Customerlist },
    ];
 
    return (
