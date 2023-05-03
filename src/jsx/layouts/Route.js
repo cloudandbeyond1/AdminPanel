@@ -15,6 +15,8 @@ import Companies from "../components/Dashboard/Companies/Companies";
 import Statistics from "../components/Dashboard/Statistics/Statistics";
 import SearchJobs from "../components/Dashboard/SearchJobs/SearchJobs";
 import Dash from "../dashboard";
+import Login from "../pages/Login";
+import Markup from "..";
 
 //Product
 
@@ -34,6 +36,7 @@ const Routes = () => {
       { url: "companies", component: Companies },
       { url: "search-job", component: SearchJobs },
       { url: "statistics", component: Statistics },
+      { url: "login", component: Login },
    ];
 
    return (

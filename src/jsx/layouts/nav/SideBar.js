@@ -9,6 +9,11 @@ import check from "../../../images/dashicons/check.png";
 import categorymenu from "../../../images/dashicons/categorymenu.png";
 import forkmenu from "../../../images/dashicons/forkmenu.png";
 import ordermenu from "../../../images/dashicons/ordermenu.png";
+import bannermenu from "../../../images/dashicons/bannermenu.png";
+import homemenu from "../../../images/dashicons/homemenu.png";
+import productsmenu from "../../../images/dashicons/productsmenu.png";
+import usermenu from "../../../images/dashicons/usermenu.png";
+
 /// Menu
 import MetisMenu from "metismenujs";
 
@@ -52,9 +57,7 @@ class SideBar extends Component {
          imgicon: {
            height: "25px",
            width: "25px",
-          
          },
-         
         }
 
       /// Active menu
@@ -84,7 +87,7 @@ class SideBar extends Component {
                         className="ai-icon"
                         
                      >
-                        <i className="flaticon-381-settings-2"></i>
+                        <img src={homemenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Dashboard</span>
                      </Link>                     
                   </li>
@@ -97,7 +100,7 @@ class SideBar extends Component {
                         className="has-arrow ai-icon"
                         to="#"
                      >
-                        <i className="flaticon-381-television"></i>
+                        <img src={productsmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Products</span>
                      </Link>
                      <ul >
@@ -143,15 +146,15 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text Product">Menu</span>
+                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Banner</span>
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/form-element">Add Menu</Link>
+                           <Link to="/form-element">Add Banner</Link>
                         </li>
                         <li>
-                           <Link to="/form-wizard">List Menu</Link>
+                           <Link to="/form-wizard">List Banner</Link>
                         </li>                       
                      </ul>
                   </li>
@@ -210,37 +213,19 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Customer List</span>
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">User List</span>
                      </Link>
-                     <ul >
+                     <ul>
                         <li>
                            <Link to="/page-register">Register</Link>
                         </li>
                         <li>
                            <Link to="/page-login">Login</Link>
                         </li>
-                        
-                      
                      </ul>
                   </li>
-                  <li
-                     className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                    
-                     <Link
-                        to="widget-basic"
-                        className="ai-icon"
-                        
-                     >
-                        {/* <i className="flaticon-381-settings-2"></i> */}
-                        <img src={check} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text">Settings</span>
-                     </Link>
-
-                  </li>
+                  
                  
                </MM>
 				<div className="plus-box">
@@ -253,7 +238,7 @@ class SideBar extends Component {
                   </p>
                   <p>by DexignZone</p> */}
                   <p>
-                     <strong>New Do Hospitality</strong> ©All Rights Reserved
+                     <strong>New Do Hospitality</strong> © All Rights Reserved
                   </p>
                   {/* <p>by DexignZone</p> */}
                </div>
