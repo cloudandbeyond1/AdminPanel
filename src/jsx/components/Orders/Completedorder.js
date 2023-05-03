@@ -48,12 +48,12 @@ const Completedorder = () => {
 		},
 		{
 			id: '#5552311',	date: '26 March 2020 ',ResName: 'Domino`s Pizza',	customer: 'David Horison',	location: '11 Church Road',		amount: '$320',
-			status: <Link to={""} className="btn bgl-warning text-warning btn-sm">Delivered</Link>,
+			status: <Link to={""} className="btn bgl-success text-success  btn-sm">Delivered</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 		{
 			id: '#5552322',	date: '27 March 2020',	ResName: 'KHODIYAR KRUPA DABELI & VADAPAV',customer: '21 King Street London',	location: 'Tokyo',	amount: '$170',
-			status: <Link to={""} className="btn bgl-light btn-sm">Delivered</Link>,
+			status: <Link to={""} className="btn bgl-success text-success  btn-sm">Delivered</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 		{
@@ -63,7 +63,7 @@ const Completedorder = () => {
 		},
 		{
 			id: '#5552349',	date: '21 March 2020',ResName: 'Patel`s Puff House',	customer: 'James WItcwicky',location: '32 The Green London',	amount: '$433',
-			status: <Link to={""} className="btn bgl-warning text-warning btn-sm">Delivered</Link>,
+			status: <Link to={""} className="btn bgl-success text-success  btn-sm">Delivered</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 	]

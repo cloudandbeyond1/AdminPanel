@@ -24,6 +24,11 @@ import Listproduct from "../components/Products/ListProduct";
 
 import Customerlist from "../components/Customer/Customerlist";
 
+/// Order List
+import NewOrder from "../components/Orders/NewOrder";
+import CancelledOrder from "../components/Orders/CancelledOrder"
+import Completedorder from "../components/Orders/Completedorder";
+
 const Routes = () => {
    const routes = [
       /// Deshborad
@@ -38,6 +43,9 @@ const Routes = () => {
       { url: "search-job", component: SearchJobs },
       { url: "statistics", component: Statistics },
       { url: "Add-Customer-list", component: Customerlist },
+      { url: "New-Order", component: NewOrder },
+		{ url: "Cancelled-Order", component: CancelledOrder },
+		{ url: "Completed-Order", component: Completedorder },
    ];
 
    return (
