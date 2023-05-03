@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import Registration from "../pages/Registration";
+
 const Login = () => {
    const [loginData, setLoginData] = useState({});
    const handleBlur = (e) => {
@@ -42,12 +44,12 @@ const Login = () => {
                               </div>
                            </div>
                            <div className="text-center">
-                              <Link to="/Add-Product">Add Product</Link>
+                              
                               <Link to="/Dash"><button  type="submit"  className="btn btn-primary btn-block"  onClick={() => submitHandler} > Sign Me In </button></Link>
                            </div>
                         </form>
                         <div className="new-account mt-3">
-                           <p className=""> Don't have an account?{" "}   <Link className="text-primary" to="/page-register">  Sign up   </Link>  </p>
+                           <p className=""> Don't have an account?{" "}   <Link className="text-primary" to="/Register">  Sign up   </Link>  </p>
                         </div>
                      </div>
                   </div>

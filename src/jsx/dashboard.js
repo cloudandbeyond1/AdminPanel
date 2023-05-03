@@ -29,14 +29,23 @@ import Analytics from "./components/Dashboard/Analytics/Analytics";
 import Review from "./components/Dashboard/Review/Review";
 import Order from "./components/Dashboard/Order/Order";
 import Orderlist from "./components/Dashboard/Orderlist/Orderlist";
-import Customerlist from "./components/Dashboard/Customerlist/Customerlist";
+import Profile from "./components/Dashboard/Profile/Profile";
 /// Bo
 
 /// App
 /// Product List
 import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
+import Customerlist from "./components/Customer/Customerlist";
 
+/// Order List
+import NewOrder from "./components/Orders/NewOrder";
+import CancelledOrder from "./components/Orders/CancelledOrder"
+import Completedorder from "./components/Orders/Completedorder";
+
+import AddBanner from "./components/Banner/AddBanner";
+import ListBanner from "./components/Banner/ListBanner";
+import ListRestaurant from "./components/Restaurant/ListRestaurant";
 
 const Dash = () => {
    const routes = [
@@ -47,9 +56,16 @@ const Dash = () => {
 		{ url: "companies", component: Companies },
 		{ url: "analytics", component: Analytics },
 		{ url: "review", component: Review },
+		{ url: "profile", component: Profile },
 		{ url: "order", component: Order },
 		{ url: "order-list", component: Orderlist },
-		{ url: "customer-list", component: Customerlist },
+		{ url: "Add-Customer-list", component: Customerlist },
+		{ url: "New-Order", component: NewOrder },
+		{ url: "Cancelled-Order", component: CancelledOrder },
+		{ url: "Completed-Order", component: Completedorder },
+		{ url:"Add-Banner",component:AddBanner},
+		{ url:"List-Banner",component:ListBanner},
+		{ url:"List-Restaurant",component:ListRestaurant},
    ];
 
    return (

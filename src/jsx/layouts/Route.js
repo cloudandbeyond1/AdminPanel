@@ -16,10 +16,24 @@ import Statistics from "../components/Dashboard/Statistics/Statistics";
 import SearchJobs from "../components/Dashboard/SearchJobs/SearchJobs";
 import Dash from "../dashboard";
 
+
 //Product
 
 import Addproduct from "../components/Products/Addproduct";
 import Listproduct from "../components/Products/ListProduct";
+
+import Customerlist from "../components/Customer/Customerlist";
+
+/// Order List
+import NewOrder from "../components/Orders/NewOrder";
+import CancelledOrder from "../components/Orders/CancelledOrder"
+import Completedorder from "../components/Orders/Completedorder";
+
+//BannerList
+
+import AddBanner from "../components/Banner/AddBanner";
+import ListBanner from "../components/Banner/ListBanner";
+import ListRestaurant from "../components/Restaurant/ListRestaurant";
 
 const Routes = () => {
    const routes = [
@@ -34,6 +48,14 @@ const Routes = () => {
       { url: "companies", component: Companies },
       { url: "search-job", component: SearchJobs },
       { url: "statistics", component: Statistics },
+      { url: "Add-Customer-list", component: Customerlist },
+      { url: "New-Order", component: NewOrder },
+		{ url: "Cancelled-Order", component: CancelledOrder },
+		{ url: "Completed-Order", component: Completedorder },
+      { url:"Add-Banner",component:AddBanner},
+{ url:"List-Banner",component:ListBanner},
+{ url:"List-Restaurant",component:ListRestaurant},
+
    ];
 
    return (
