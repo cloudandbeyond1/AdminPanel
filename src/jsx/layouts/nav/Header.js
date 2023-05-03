@@ -298,8 +298,8 @@ const Header = ({ onNote, toggle, onProfile, onActivity, onNotification}) => {
                            data-toggle="dropdown"
                         >
                            <div className="header-info">
-								<small>Good Morning</small>
-								<span>James Sullivan</span>
+								<p>Hi 👋</p>
+								<span>Dracon Malfoy</span>
                            </div>
                            <img src={profile} width="20" alt="" />
                         </Link>

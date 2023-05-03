@@ -11,6 +11,12 @@ import clipboard from "../../../../images/dashicons/clipboard.png";
 import check from "../../../../images/dashicons/check.png";
 import cancel from "../../../../images/dashicons/close.png";
 import sale from "../../../../images/dashicons/sale-tag.png";
+import cb from "../../../../images/dishes/briyani0.jpg";
+import mb from "../../../../images/dishes/briyani1.jpg";
+import eb from "../../../../images/dishes/briyani2.jpg";
+import fb from "../../../../images/dishes/briyani3.jpg";
+import mushroom from "../../../../images/dishes/briyani4.jpg";
+
 
 
 
@@ -184,15 +190,11 @@ const Home = () => {
 				</div>	
 			</div>
 			
-			
-			
-			
 			<div className="col-xl-9 col-xxl-8 col-lg-12 col-sm-12">
 				<div className="card">
 					<div className="card-header border-0">
 						<div>
-							<h4 className="card-title mb-2">Recent Order Request</h4>
-							
+							<h4 className="card-title mb-2">Recent Orders</h4>
 						</div>
 						<div className="dropdown">
 							<button type="button" className="btn border btn-rounded text-black dropdown-toggle" data-toggle="dropdown">
@@ -214,21 +216,21 @@ const Home = () => {
 										<div className="media align-items-center">
 										
 											<Link to={"/ecom-product-detail"} >	
-												<img className=" mr-3 img-fluid rounded-circle" width="75" src={require("./../../../../images/card/pic1.jpg").default} alt="DexignZone" />
+												<img className=" mr-3 img-fluid" width="90" src={cb} alt="chicken" />
 											</Link>
 											<div className="media-body">
-												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"} className="text-black" >Tuna Soup spinach with himalaya salt.</Link></h5>
-												<p className="mb-0 text-primary">#0010235</p>
+												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"} className="text-black" >Chicken Briyani</Link></h5>
+												{/* <p className="mb-0 text-primary">#0010235</p> */}
 											</div>
 										</div>
 									</td>
 									<td>
 										<h5 className="mb-2 text-black wspace-no">Jimmy Kueai</h5>
-										<p className="mb-0">South Corner st41256 london</p>
+										{/* <p className="mb-0">South Corner st41256 london</p> */}
 									</td>
 									<td style={{width:"100px"}}>
 										<div className="d-flex align-items-center justify-content-center">
-											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">$7.4</h4>
+											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">₹300</h4>
 											<p className="mb-0 fs-20 d-inline-block">x3</p>
 										</div>
 									</td>
@@ -269,7 +271,6 @@ const Home = () => {
 															View Details
 														</Link>
 													</Dropdown.Item>
-													
 												</Dropdown.Menu>
 											</Dropdown>
 										</div>
@@ -279,21 +280,21 @@ const Home = () => {
 									<td>
 										<div className="media align-items-center">
 											<Link to={"/ecom-product-detail"}>	
-												<img className="mr-3 img-fluid rounded-circle" width="75" src={require("./../../../../images/card/pic2.jpg").default} alt="DexignZone" />
+											<img className=" mr-3 img-fluid" width="90" src={mb} alt="mutton" />
 											</Link>	
 											<div className="media-body">
-												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Mozarella Pizza With Random Topping</Link></h5>
-												<p className="mb-0 text-primary">#0010299</p>
+												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Mutton Briyani</Link></h5>
+												{/* <p className="mb-0 text-primary">#0010299</p> */}
 											</div>
 										</div>
 									</td>
 									<td>
 										<h5 className="mb-2 text-black wspace-no">Kinda Alexa</h5>
-										<p className="mb-0">Blue Ocean st.41551 London</p>
+										{/* <p className="mb-0">Blue Ocean st.41551 London</p> */}
 									</td>
 									<td>
 										<div className="d-flex align-items-center justify-content-center">
-											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">$8.2</h4>
+											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">₹380</h4>
 											<p className="mb-0 fs-20 d-inline-block">x1</p>
 										</div>
 									</td>
@@ -344,21 +345,21 @@ const Home = () => {
 									<td>
 										<div className="media align-items-center">
 											<Link to={"/ecom-product-detail"}>	
-												<img className="mr-3 img-fluid rounded-circle" width="75" src={require("./../../../../images/card/pic3.jpg").default} alt="DexignZone" />
+											<img className=" mr-3 img-fluid" width="90" src={eb} alt="egg" />
 											</Link>	
 											<div className="media-body">
-												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Sweet Cheezy Pizza for Kids Meal (Small Size)</Link></h5>
-												<p className="mb-0 text-primary">#0010235</p>
+												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Egg Briyani</Link></h5>
+												{/* <p className="mb-0 text-primary">#0010235</p> */}
 											</div>
 										</div>
 									</td>
 									<td>
 										<h5 className="mb-2 text-black wspace-no">Peter Parkur</h5>
-										<p className="mb-0">Franklin Avenue St.66125 London</p>
+										{/* <p className="mb-0">Franklin Avenue St.66125 London</p> */}
 									</td>
 									<td>
 										<div className="d-flex align-items-center justify-content-center">
-											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">$4.2</h4>
+											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">₹180</h4>
 											<p className="mb-0 fs-20 d-inline-block">x2</p>
 										</div>
 									</td>
@@ -399,7 +400,6 @@ const Home = () => {
 															View Details
 														</Link>
 													</Dropdown.Item>
-													
 												</Dropdown.Menu>
 											</Dropdown>
 										</div>
@@ -409,21 +409,21 @@ const Home = () => {
 									<td>
 										<div className="media align-items-center">
 											<Link to={"/ecom-product-detail"}>	
-												<img className="mr-3 img-fluid rounded-circle" width="75" src={require("./../../../../images/card/pic6.jpg").default} alt="DexignZone" />
+											<img className=" mr-3 img-fluid" width="90" src={fb} alt="fish" />
 											</Link>	
 											<div className="media-body">
-												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Tuna soup spinach with himalaya salt</Link></h5>
-												<p className="mb-0 text-primary">#0010235</p>
+												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Fish Briyani</Link></h5>
+												{/* <p className="mb-0 text-primary">#0010235</p> */}
 											</div>
 										</div>
 									</td>
 									<td>
 										<h5 className="mb-2 text-black wspace-no">Jimmy Kueai</h5>
-										<p className="mb-0">South Corner st41256 london</p>
+										{/* <p className="mb-0">South Corner st41256 london</p> */}
 									</td>
 									<td>
 										<div className="d-flex align-items-center justify-content-center">
-											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">$7.4</h4>
+											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">₹250</h4>
 											<p className="mb-0 fs-20 d-inline-block">x3</p>
 										</div>
 									</td>
@@ -474,21 +474,21 @@ const Home = () => {
 									<td>
 										<div className="media align-items-center">
 											<Link to={"/ecom-product-detail"}>	
-												<img className="mr-3 img-fluid rounded-circle" width="75" src={require("./../../../../images/card/pic7.jpg").default} alt="DexignZone" />
+											<img className=" mr-3 img-fluid" width="90" src={mushroom} alt="mushroom" />
 											</Link>	
 											<div className="media-body">
-												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Mozarella Pizza With Random Topping</Link></h5>
-												<p className="mb-0 text-primary">#0010299</p>
+												<h5 className="mt-0 mb-2"><Link to={"/ecom-product-detail"}  className="text-black">Mushroom Briyani</Link></h5>
+												{/* <p className="mb-0 text-primary">#0010299</p> */}
 											</div>
 										</div>
 									</td>
 									<td>
 										<h5 className="mb-2 text-black wspace-no">Cindy Alexa</h5>
-										<p className="mb-0">Blue Ocean St.41551 London</p>
+										{/* <p className="mb-0">Blue Ocean St.41551 London</p> */}
 									</td>
 									<td>
 										<div className="d-flex align-items-center justify-content-center">
-											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">$8.2</h4>
+											<h4 className="mb-0 mr-3 fs-20 text-black d-inline-block">₹210</h4>
 											<p className="mb-0 fs-20 d-inline-block">x1</p>
 										</div>
 									</td>
