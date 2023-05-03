@@ -37,7 +37,7 @@ class MM extends Component {
 }
 
 class SideBar extends Component {
-   /// Open menu
+   
    componentDidMount() {
       // sidebar open/close
       var btn = document.querySelector(".nav-control");
