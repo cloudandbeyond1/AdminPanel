@@ -55,6 +55,7 @@ class SideBar extends Component {
          ],
         
          Customerlist = ["Add-Customer-list"],
+         OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
 
          Product = ["Add-Product","List-Product"];
 
@@ -120,30 +121,7 @@ class SideBar extends Component {
                            <Link to="/ui-alert">List Restaurant</Link>
                         </li>                                       
                      </ul>
-                  </li>
-                  <li
-                     className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        
-                     >
-                        <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text Product">Menu</span>
-                     </Link>
-                     <ul >
-                        <li>
-                           <Link to="/form-element">Add Menu</Link>
-                        </li>
-                        <li>
-                           <Link to="/form-wizard">List Menu</Link>
-                        </li>                       
-                     </ul>
-                  </li>
-
+                  </li>                 
                   <li
                      className={`${
                         Product.includes(path.slice(1)) ? "mm-active" : ""
@@ -169,7 +147,7 @@ class SideBar extends Component {
 
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        OrderList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -178,14 +156,17 @@ class SideBar extends Component {
                         
                      >
                         <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text Product">Orders</span>
+                        <span className="nav-text Product">Order List</span>
                      </Link>
-                     <ul >
+                     <ul >                     
                      <li>
-                           <Link to="order-list">Orders</Link>
+                           <Link to="New-Order">New Order</Link>
                         </li>
 						<li>
-                           <Link to="customer-list">Order List</Link>
+                           <Link to="Cancelled-Order">Cancelled Order</Link>
+                        </li>    
+                        <li>
+                           <Link to="Completed-Order">Completed Order</Link>
                         </li>                    
                      </ul>
                   </li>

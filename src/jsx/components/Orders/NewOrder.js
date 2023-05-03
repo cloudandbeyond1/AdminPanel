@@ -1,9 +1,9 @@
 import React,{Fragment} from 'react';
 import {Link} from 'react-router-dom';
 import { MDBDataTable } from 'mdbreact';
-import Dropdownblog2 from './Dropdownblog2';
+import Dropdownblog2 from './testddl';
 
-const NewOrder = () => {
+const NewOrder = ()=> {
   const data = {
     columns: [
 		{label: 'Order ID', field: 'id', sort: 'asc',  width: 100},
@@ -75,7 +75,6 @@ const NewOrder = () => {
 				</div>	
 			</div>
 		</Fragment>
-					
 	);
-}
+};
 export default NewOrder;
