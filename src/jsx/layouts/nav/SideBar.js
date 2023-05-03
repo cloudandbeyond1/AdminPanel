@@ -39,7 +39,6 @@ class MM extends Component {
 class SideBar extends Component {
    
    componentDidMount() {
-      // sidebar open/close
       var btn = document.querySelector(".nav-control");
       var aaa = document.querySelector("#main-wrapper");
 
