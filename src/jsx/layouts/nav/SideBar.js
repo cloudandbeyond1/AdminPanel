@@ -73,6 +73,10 @@ class SideBar extends Component {
 
          OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
 
+         BannerList=["Add-Banner","List-Banner"],
+
+         RestaurantList=["List-Restaurant"],
+
          Product = ["Add-Product","List-Product"];
 
 
@@ -118,7 +122,7 @@ class SideBar extends Component {
                 
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        RestaurantList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -135,13 +139,13 @@ class SideBar extends Component {
                            <Link to="/ui-accordion">Add Restaurant</Link>
                         </li>
                         <li>
-                           <Link to="/ui-alert">List Restaurant</Link>
+                           <Link to="/List-Restaurant">List Restaurant</Link>
                         </li>                                       
                      </ul>
                   </li>
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        BannerList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -154,10 +158,10 @@ class SideBar extends Component {
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/form-element">Add Banner</Link>
+                           <Link to="/Add-Banner">Add Banner</Link>
                         </li>
                         <li>
-                           <Link to="/form-wizard">List Banner</Link>
+                           <Link to="/List-Banner">List Banner</Link>
                         </li>                       
                      </ul>
                   </li>
