@@ -43,6 +43,10 @@ import NewOrder from "./components/Orders/NewOrder";
 import CancelledOrder from "./components/Orders/CancelledOrder"
 import Completedorder from "./components/Orders/Completedorder";
 
+import AddBanner from "./components/Banner/AddBanner";
+import ListBanner from "./components/Banner/ListBanner";
+import ListRestaurant from "./components/Restaurant/ListRestaurant";
+
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -59,6 +63,9 @@ const Dash = () => {
 		{ url: "New-Order", component: NewOrder },
 		{ url: "Cancelled-Order", component: CancelledOrder },
 		{ url: "Completed-Order", component: Completedorder },
+		{ url:"Add-Banner",component:AddBanner},
+		{ url:"List-Banner",component:ListBanner},
+		{ url:"List-Restaurant",component:ListRestaurant},
    ];
 
    return (
