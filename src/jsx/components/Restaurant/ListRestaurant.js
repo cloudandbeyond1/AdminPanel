@@ -8,10 +8,6 @@ import Restaurant from "../../../images/bannerimages/restaurantimage.png"
 const ListRestaurant = () => {
 	const commerce = new Commerce('pk_517267717706df3d39ab4a44126aae98baf632b72c612')
 	const [products, setProducts] = useState([])
-	// const [categories,setCategories] = useState([])
-  
-	
-  
 	useEffect(() => {
 	  commerce.products.list()
 		.then(res => {
