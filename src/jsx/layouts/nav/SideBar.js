@@ -208,13 +208,13 @@ class SideBar extends Component {
                      </ul>
                   </li>
 
-                  <li>
+                  {/* <li>
                      <Link
                         className="has-arrow ai-icon"
                         to="#"
                         
                      >
-                        <i className="flaticon-381-layer-1"></i>
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Customer List</span>
                      </Link>
                      <ul>
@@ -225,7 +225,7 @@ class SideBar extends Component {
                            <Link to="/page-login">Login</Link>
                         </li>
                      </ul>
-                  </li>
+                  </li> */}
                   <li
                      className={`${
                         Customerlist.includes(path.slice(1)) ? "mm-active" : ""
@@ -237,8 +237,8 @@ class SideBar extends Component {
                         className="ai-icon"
                         
                      >
-                        <i className="flaticon-381-settings-2"></i>
-                        <span className="nav-text">Customer List</span>
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">User List</span>
                      </Link>
 
                   </li>
