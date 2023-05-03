@@ -29,7 +29,7 @@ import Analytics from "./components/Dashboard/Analytics/Analytics";
 import Review from "./components/Dashboard/Review/Review";
 import Order from "./components/Dashboard/Order/Order";
 import Orderlist from "./components/Dashboard/Orderlist/Orderlist";
-import Customerlist from "./components/Dashboard/Customerlist/Customerlist";
+import Profile from "./components/Dashboard/Profile/Profile";
 /// Bo
 
 /// App
@@ -50,7 +50,7 @@ const Dash = () => {
 		{ url: "profile", component: Profile },
 		{ url: "order", component: Order },
 		{ url: "order-list", component: Orderlist },
-		{ url: "customer-list", component: Customerlist },
+		{ url: "Add-Customer-list", component: Customerlist },
    ];
 
    return (

@@ -6,7 +6,7 @@ import PerfectScrollbar from "react-perfect-scrollbar";
 /// Image
 import profile from "../../../images/profile/12.png";
 import avatar from "../../../images/avatar/1.jpg";
-
+import Profile from "../../components/Dashboard/Profile/Profile";
 
 const Header = ({ onNote, toggle, onProfile, onActivity, onNotification}) => {
    var path = window.location.pathname.split("/");
@@ -309,7 +309,7 @@ const Header = ({ onNote, toggle, onProfile, onActivity, onNotification}) => {
                            }`}
                         >
                            <Link
-                              to="/profile"
+                              to="/Profile"
                               className="dropdown-item ai-icon"
                            >
                               <svg

@@ -37,7 +37,7 @@
       "draft-js": "^0.11.7",
       "html-to-draftjs": "^1.5.0",
       "material-ui-color-picker": "^3.5.1",
-      "mdbreact": "^4.6.1",
+      "mdbreact": "^4.27.0",
       "metismenujs": "^1.2.1",
       "nouislider-react": "^3.3.9",
       "rc-color-picker": "^1.2.6",
