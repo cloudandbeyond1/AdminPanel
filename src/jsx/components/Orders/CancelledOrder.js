@@ -28,7 +28,7 @@ const CancelledOrder = () => {
 		},
 		{
 			id: '#5552358',	date: '15 March 2020',	ResName: 'Domino`s Pizza',customer: 'Olivia Shine',location: 'New York',	amount: '$372',
-			status: <Link to={""} className="btn bgl-success text-success  btn-sm">Cancelled</Link>,
+			status: <Link to={""} className="btn bgl-light btn-sm">Cancelled</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 		{
@@ -48,12 +48,12 @@ const CancelledOrder = () => {
 		},
 		{
 			id: '#5552358',	date: '20 March 2020',	ResName: 'Domino`s Pizza',customer: 'Rendy Greenlee',	location: '981 St. John’s Road London',	amount: '$470',
-			status: <Link to={""} className="btn bgl-warning text-warning btn-sm">Cancelled</Link>,
+			status: <Link to={""} className="btn bgl-light btn-sm">Cancelled</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 		{
 			id: '#5552356',	date: '07 March 2020',	ResName: 'Domino`s Pizza',customer: 'Olivia Shine',	location: 'London',	amount: '$313',
-			status: <Link to={""} className="btn bgl-success text-success  btn-sm">Cancelled</Link>,
+			status: <Link to={""} className="btn bgl-light btn-sm">Cancelled</Link>,
 			dropdown: <Dropdownblog2 />,
 		},
 		{

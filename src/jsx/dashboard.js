@@ -38,6 +38,11 @@ import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
 import Customerlist from "./components/Customer/Customerlist";
 
+/// Order List
+import NewOrder from "./components/Orders/NewOrder";
+import CancelledOrder from "./components/Orders/CancelledOrder"
+import Completedorder from "./components/Orders/Completedorder";
+
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -51,6 +56,9 @@ const Dash = () => {
 		{ url: "order", component: Order },
 		{ url: "order-list", component: Orderlist },
 		{ url: "Add-Customer-list", component: Customerlist },
+		{ url: "New-Order", component: NewOrder },
+		{ url: "Cancelled-Order", component: CancelledOrder },
+		{ url: "Completed-Order", component: Completedorder },
    ];
 
    return (
