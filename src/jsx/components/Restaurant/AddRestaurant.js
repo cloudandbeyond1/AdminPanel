@@ -583,7 +583,6 @@ const AddRestaurant = () => {
                               </div>
 
 
-
                               <h4 className="mb-3"><i class="fa fa-money"></i> Restaurant Payout Information</h4>
                               <hr className="mb-4" />
 
