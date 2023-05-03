@@ -1,7 +1,7 @@
 import React,{Fragment} from 'react';
 import {Link} from 'react-router-dom';
 import { MDBDataTable } from 'mdbreact';
-import Dropdownblog2 from './testddl';
+import Dropdownblog2 from './Dropdownblog2';
 
 const Completedorder = () => {
   const data = {
