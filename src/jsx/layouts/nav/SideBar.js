@@ -112,7 +112,7 @@ class SideBar extends Component {
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/Add-Product">Add Product</Link>
+                           <Link to="/Add-Product">Add Products</Link>
                         </li>                     
                         <li>
                            <Link to="/List-Product">Product List</Link>
