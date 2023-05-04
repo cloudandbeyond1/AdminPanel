@@ -38,6 +38,7 @@ import Completedorder from "./components/Orders/Completedorder";
 import AddBanner from "./components/Banner/AddBanner";
 import ListBanner from "./components/Banner/ListBanner";
 import ListRestaurant from "./components/Restaurant/ListRestaurant";
+import AddRestaurant from "./components/Restaurant/AddRestaurant";
 
 const Markup = () => {
    const routes = [
@@ -45,6 +46,7 @@ const Markup = () => {
 		{ url: "", component: Login },
 		
 		{ url: "Add-Product", component: Addproduct },
+		{ url: "Add-Restaurant", component: AddRestaurant},
 		{ url: "List-Product", component: ListProduct },
 		{ url: "Dash", component: Dash },
 		{ url: "Add-Customer-list", component: Customerlist },
