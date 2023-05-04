@@ -50,7 +50,7 @@ const AddBanner = () => {
                     </div>
                          {/* Submit Button */}
 						<div class="col-12">
-                            <button type="submit" name="add_banner" class="btn btn-primary mb-2" style={{backgroundColor:"#FF720D"}}>Add Banner</button>
+                            <button type="submit" name="add_banner" class="btn btn-primary mb-2">Add Banner</button>
                         </div>
 		   </div>
 		</div>
