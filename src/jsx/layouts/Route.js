@@ -16,7 +16,6 @@ import Statistics from "../components/Dashboard/Statistics/Statistics";
 import SearchJobs from "../components/Dashboard/SearchJobs/SearchJobs";
 import Dash from "../dashboard";
 
-
 //Product
 
 import Addproduct from "../components/Products/Addproduct";
@@ -36,6 +35,8 @@ import ListBanner from "../components/Banner/ListBanner";
 import ListRestaurant from "../components/Restaurant/ListRestaurant";
 import AddRestaurant from "../components/Restaurant/AddRestaurant";
 
+
+
 const Routes = () => {
    const routes = [
       /// Deshborad
@@ -54,9 +55,14 @@ const Routes = () => {
 		{ url: "Cancelled-Order", component: CancelledOrder },
 		{ url: "Completed-Order", component: Completedorder },
       { url:"Add-Banner",component:AddBanner},
+
 { url:"List-Banner",component:ListBanner},
 { url:"List-Restaurant",component:ListRestaurant},
 { url:"Add-Restaurant",component:AddRestaurant},
+
+      { url:"List-Banner",component:ListBanner},
+      { url:"List-Restaurant",component:ListRestaurant},
+
 
    ];
 

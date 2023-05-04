@@ -99,10 +99,10 @@ const ListBanner = () => {
                                 <div class="badge light badge-success">Publish</div>
                              </td>
 				             <td>
-                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                   <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
-                                </a>
-                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#f72b50"}}>
+                                </a>  
+                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                   <i class="fa fa-trash" style={{fontSize:"18px"}}></i>
                                 </a>
 				             </td>
@@ -118,10 +118,10 @@ const ListBanner = () => {
                                 <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                   <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                </a>
-                               <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#f72b50"}}>
+                               <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                  <i class="fa fa-trash" style={{fontSize:"18px"}}></i>
                                </a>
 				            </td>
@@ -137,10 +137,10 @@ const ListBanner = () => {
                                 <div class="badge light badge-success">Publish</div>
                              </td>
                              <td>
-                                <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                                <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                    <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                 </a>
-                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#f72b50"}}>
+                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                    <i class="fa fa-trash" style={{fontSize:"18px"}}></i>
                                 </a>
 				             </td>
@@ -156,10 +156,10 @@ const ListBanner = () => {
                                 <div class="badge light badge-success">Publish</div>
                             </td>
 				            <td>
-                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                   <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                 </a>
-                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#f72b50"}}>
+                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                    <i class="fa fa-trash" style={{fontSize:"18px"}}></i>
                                 </a>
 				            </td>
@@ -175,10 +175,10 @@ const ListBanner = () => {
                                 <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                                <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                    <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                 </a>
-                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#f72b50"}}>
+                                <a  class="btn btn-danger shadow btn-xs sharp" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                    <i class="fa fa-trash" style={{fontSize:"18px"}}></i>
                                 </a>
 				            </td>

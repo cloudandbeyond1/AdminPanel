@@ -37,9 +37,8 @@ class MM extends Component {
 }
 
 class SideBar extends Component {
-   /// Open menu
+   
    componentDidMount() {
-      // sidebar open/close
       var btn = document.querySelector(".nav-control");
       var aaa = document.querySelector("#main-wrapper");
 
@@ -112,7 +111,7 @@ class SideBar extends Component {
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/Add-Product">Add Product</Link>
+                           <Link to="/Add-Product">Add Products</Link>
                         </li>                     
                         <li>
                            <Link to="/List-Product">Product List</Link>
