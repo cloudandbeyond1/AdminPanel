@@ -35,6 +35,10 @@ import AddBanner from "../components/Banner/AddBanner";
 import ListBanner from "../components/Banner/ListBanner";
 import ListRestaurant from "../components/Restaurant/ListRestaurant";
 import AddRestaurant from "../components/Restaurant/AddRestaurant";
+import AddCategory from "../components/Category/AddCategory";
+import ListCategory from "../components/Category/ListCategory";
+
+
 
 const Routes = () => {
    const routes = [
@@ -57,6 +61,9 @@ const Routes = () => {
 { url:"List-Banner",component:ListBanner},
 { url:"List-Restaurant",component:ListRestaurant},
 { url:"Add-Restaurant",component:AddRestaurant},
+{ url:"Add-Category",component:AddCategory},
+{ url:"List-Category",component:ListCategory},
+
 
    ];
 
