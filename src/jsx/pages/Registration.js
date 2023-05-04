@@ -46,7 +46,7 @@ const Registration = () => {
                               <input type="password" className="form-control" value="Password"  onChange={handleBlur}  />
                            </div>
                            <div className="text-center mt-4">
-                              <button type="submit" className="btn btn-primary btn-block"  onClick={() => submitHandler} >  Sign me up  </button>
+                           <Link to="/Dash"><button type="submit" className="btn btn-primary btn-block"  onClick={() => submitHandler} >  Sign me up  </button></Link>
                            </div>
                         </form>
                         <div className="new-account mt-3">

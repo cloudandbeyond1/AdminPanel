@@ -563,9 +563,9 @@ const Home = () => {
 											<div className="number">#1</div>
 										</div>
 										<div className="media-body">
-											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Chicken curry special with cucumber</Link></h5>
+											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Chicken curry special</Link></h5>
 											<div className="d-flex justify-content-between align-items-center">
-												<h4 className="mb-0 text-black font-w600">$5.6</h4>
+												<h4 className="mb-0 text-black font-w600">₹6</h4>
 												<p className="mb-0">Order <strong className="text-black font-w500">89x</strong></p>
 											</div>
 										</div>
@@ -582,7 +582,7 @@ const Home = () => {
 										<div className="media-body">
 											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Watermelon juice with ice</Link></h5>
 											<div className="d-flex justify-content-between align-items-center">
-												<h4 className="mb-0 text-black font-w600">$4.8</h4>
+												<h4 className="mb-0 text-black font-w600">₹60</h4>
 												<p className="mb-0">Order <strong className="text-black font-w500">67x</strong></p>
 											</div>
 										</div>
@@ -599,7 +599,7 @@ const Home = () => {
 										<div className="media-body">
 											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Italiano pizza with garlic</Link></h5>
 											<div className="d-flex justify-content-between align-items-center">
-												<h4 className="mb-0 text-black font-w600">$12.3</h4>
+												<h4 className="mb-0 text-black font-w600">₹450</h4>
 												<p className="mb-0">Order <strong className="text-black font-w500">59x</strong></p>
 											</div>
 										</div>
@@ -616,7 +616,7 @@ const Home = () => {
 										<div className="media-body">
 											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Tuna soup spinach with himalaya salt</Link></h5>
 											<div className="d-flex justify-content-between align-items-center">
-												<h4 className="mb-0 text-black font-w600">$3.6</h4>
+												<h4 className="mb-0 text-black font-w600">₹300</h4>
 												<p className="mb-0">Order <strong className="text-black font-w500">49x</strong></p>
 											</div>
 										</div>
@@ -633,7 +633,7 @@ const Home = () => {
 										<div className="media-body">
 											<h5 className="mb-3"><Link to={"/ecom-product-detail"}  className="text-black">Medium Spicy Spagethi Italiano</Link></h5>
 											<div className="d-flex justify-content-between align-items-center">
-												<h4 className="mb-0 text-black font-w600">$4.2</h4>
+												<h4 className="mb-0 text-black font-w600">₹460</h4>
 												<p className="mb-0">Order <strong className="text-black font-w500">49x</strong></p>
 											</div>
 										</div>

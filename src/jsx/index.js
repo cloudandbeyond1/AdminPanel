@@ -51,6 +51,7 @@ import Merchant from "./components/Settings/Merchant";
 import Tax from "./components/Settings/Tax";
 
 
+
 const Markup = () => {
    const routes = [
 		/// Deshborad
@@ -71,6 +72,7 @@ const Markup = () => {
 		{ url: "List-Category", component: ListCategory},
 		{ url: "Merchant", component:Merchant},
 		{ url: "Tax", component:Tax},
+		{ url: "Register", component:Registration},
 
    ];
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Registration from "../pages/Registration";
 
 const Login = () => {
    const [loginData, setLoginData] = useState({});
