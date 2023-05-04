@@ -8,7 +8,7 @@ const Profile = () => {
    return (
       <Fragment>
          <div className="row">
-            <div className="col-xl-9 col-xxl-8 col-lg-8">
+            <div className="col-xl-12 col-xxl-12 col-lg-12">
                <div className="row">
                   <div className="col-xl-12">
                      <div className="card profile-card">
@@ -49,7 +49,7 @@ const Profile = () => {
                               <div className="mb-5">
                                  <div className="title mb-4">
                                     <span className="fs-18 text-black font-w600">
-                                       Generals
+                                       General Details
                                     </span>
                                  </div>
                                  <div className="row">
@@ -118,7 +118,7 @@ const Profile = () => {
                               <div className="mb-5">
                                  <div className="title mb-4">
                                     <span className="fs-18 text-black font-w600">
-                                       CONTACT
+                                       Contact Details
                                     </span>
                                  </div>
                                  <div className="row">
@@ -226,174 +226,14 @@ const Profile = () => {
                                     </div>
                                  </div>
                               </div>
-                              <div className="mb-5">
-                                 <div className="title mb-4">
-                                    <span className="fs-18 text-black font-w600">
-                                       About me
-                                    </span>
-                                 </div>
-                                 <div className="row">
-                                    <div className="col-xl-12">
-                                       <div className="form-group">
-                                          <label>Tell About You</label>
-                                          <textarea
-                                             className="form-control"
-                                             rows="6"
-                                             defaultValue="Lorem ipsum dolor sit amet,
-                                             consectetur adipiscing elit, sed do
-                                             eiusmod tempor incididunt ut labore
-                                             et dolore magna aliqua. Ut enim ad
-                                             minim veniam, quis nostrud
-                                             exercitation ullamco laboris nisi
-                                             ut aliquip ex ea commodo consequat.
-                                             Duis aute irure dolor in
-                                             reprehenderit in voluptate velit
-                                             esse cillum dolore eu fugiat nulla
-                                             pariatur. Excepteur sint occaecat
-                                             cupidatat non proident, sunt in
-                                             culpa qui officia deserunt mollit
-                                             anim id est laborum que laudantium,
-                                             totam rem aperiam, eaque ipsa quae
-                                             ab illo inventore veritatis et
-                                             quasi architecto beatae vitae dicta
-                                             su"
-                                          />
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div>
-                                 <div className="title mb-4">
-                                    <span className="fs-18 text-black font-w600">
-                                       Skils
-                                    </span>
-                                 </div>
-                                 <div className="row">
-                                    <div className="col-xl-6">
-                                       <div className="media mb-4">
-                                          <span className="text-primary progress-icon mr-3">
-                                             78%
-                                          </span>
-                                          <div className="media-body">
-                                             <p className="font-w500">
-                                                Programming
-                                             </p>
-                                             <div
-                                                className="progress skill-progress"
-                                                style={{ height: "10px" }}
-                                             >
-                                                <div
-                                                   className="progress-bar bg-primary progress-animated"
-                                                   style={{
-                                                      width: "78%",
-                                                      height: "10px",
-                                                   }}
-                                                   role="progressbar"
-                                                >
-                                                   <span className="sr-only">
-                                                      78% Complete
-                                                   </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-xl-6">
-                                       <div className="media mb-4">
-                                          <span className="text-primary progress-icon mr-3">
-                                             65%
-                                          </span>
-                                          <div className="media-body">
-                                             <p className="font-w500">
-                                                Prototyping
-                                             </p>
-                                             <div
-                                                className="progress skill-progress"
-                                                style={{ height: "10px" }}
-                                             >
-                                                <div
-                                                   className="progress-bar bg-primary progress-animated"
-                                                   style={{
-                                                      width: "65%",
-                                                      height: "10px;",
-                                                   }}
-                                                   role="progressbar"
-                                                >
-                                                   <span className="sr-only">
-                                                      65% Complete
-                                                   </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-xl-6">
-                                       <div className="media mb-4">
-                                          <span className="text-primary progress-icon mr-3">
-                                             89%
-                                          </span>
-                                          <div className="media-body">
-                                             <p className="font-w500">
-                                                UI Design
-                                             </p>
-                                             <div
-                                                className="progress skill-progress"
-                                                style={{ height: "10px" }}
-                                             >
-                                                <div
-                                                   className="progress-bar bg-primary progress-animated"
-                                                   style={{
-                                                      width: "89%",
-                                                      height: "10px",
-                                                   }}
-                                                   role="progressbar"
-                                                >
-                                                   <span className="sr-only">
-                                                      89% Complete
-                                                   </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-xl-6">
-                                       <div className="media mb-4">
-                                          <span className="text-primary progress-icon mr-3">
-                                             94%
-                                          </span>
-                                          <div className="media-body">
-                                             <p className="font-w500">
-                                                Researching
-                                             </p>
-                                             <div
-                                                className="progress skill-progress"
-                                                style={{ height: "10px" }}
-                                             >
-                                                <div
-                                                   className="progress-bar bg-primary progress-animated"
-                                                   style={{
-                                                      width: "94%",
-                                                      height: "10px;",
-                                                   }}
-                                                   role="progressbar"
-                                                >
-                                                   <span className="sr-only">
-                                                      94% Complete
-                                                   </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                              
                            </form>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div className="col-xl-3 col-xxl-4 col-lg-4">
+            {/* <div className="col-xl-3 col-xxl-4 col-lg-4">
                <div className="row">
                   <div className="col-xl-12">
                      <div className="card  flex-lg-column flex-md-row ">
@@ -670,7 +510,7 @@ const Profile = () => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
          </div>
       </Fragment>
    );

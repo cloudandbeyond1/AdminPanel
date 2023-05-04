@@ -5,6 +5,14 @@ import { Link } from "react-router-dom";
 
 /// Scroll
 import PerfectScrollbar from "react-perfect-scrollbar";
+import check from "../../../images/dashicons/check.png";
+import categorymenu from "../../../images/dashicons/categorymenu.png";
+import forkmenu from "../../../images/dashicons/forkmenu.png";
+import ordermenu from "../../../images/dashicons/ordermenu.png";
+import bannermenu from "../../../images/dashicons/bannermenu.png";
+import homemenu from "../../../images/dashicons/homemenu.png";
+import productsmenu from "../../../images/dashicons/productsmenu.png";
+import usermenu from "../../../images/dashicons/usermenu.png";
 
 /// Menu
 import MetisMenu from "metismenujs";
@@ -29,9 +37,8 @@ class MM extends Component {
 }
 
 class SideBar extends Component {
-   /// Open menu
+   
    componentDidMount() {
-      // sidebar open/close
       var btn = document.querySelector(".nav-control");
       var aaa = document.querySelector("#main-wrapper");
 
@@ -45,6 +52,13 @@ class SideBar extends Component {
       /// Path
       const path = window.location.pathname;
 
+      const styles = {
+         imgicon: {
+           height: "25px",
+           width: "25px",
+         },
+        }
+
       /// Active menu
       let deshBoard = [
             "",
@@ -54,8 +68,17 @@ class SideBar extends Component {
 			
          ],
         
+         Customerlist = ["Add-Customer-list"],
 
-         Product = ["Add-Product","List-Product"];
+         OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
+
+         BannerList=["Add-Banner","List-Banner"],
+
+         Restaurant=["Add-Restaurant","List-Restaurant"],
+
+         Product = ["Add-Product","List-Product"],
+
+         CategoryList = ["Add-Category","List-Category"];
 
 
       return (
@@ -72,7 +95,7 @@ class SideBar extends Component {
                         className="ai-icon"
                         
                      >
-                        <i className="flaticon-381-settings-2"></i>
+                        <img src={homemenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Dashboard</span>
                      </Link>                     
                   </li>
@@ -85,12 +108,12 @@ class SideBar extends Component {
                         className="has-arrow ai-icon"
                         to="#"
                      >
-                        <i className="flaticon-381-television"></i>
+                        <img src={productsmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Products</span>
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/Add-Product">Add Product</Link>
+                           <Link to="/Add-Product">Add Products</Link>
                         </li>                     
                         <li>
                            <Link to="/List-Product">Product List</Link>
@@ -100,7 +123,7 @@ class SideBar extends Component {
                 
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        Restaurant.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -108,21 +131,22 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-internet"></i>
+                        {/* <i className="flaticon-381-internet"></i> */}
+                        <img src={forkmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text">Restaurant</span>
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/ui-accordion">Add Restaurant</Link>
+                           <Link to="/Add-Restaurant">Add Restaurant</Link>
                         </li>
                         <li>
-                           <Link to="/ui-alert">List Restaurant</Link>
+                           <Link to="/List-Restaurant">List Restaurant</Link>
                         </li>                                       
                      </ul>
                   </li>
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        BannerList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -130,22 +154,22 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text Product">Menu</span>
+                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Banner</span>
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/form-element">Add Menu</Link>
+                           <Link to="/Add-Banner">Add Banner</Link>
                         </li>
                         <li>
-                           <Link to="/form-wizard">List Menu</Link>
+                           <Link to="/List-Banner">List Banner</Link>
                         </li>                       
                      </ul>
                   </li>
 
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        CategoryList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -153,22 +177,23 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Category</span>
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/form-element">Add Category</Link>
+                           <Link to="/Add-Category">Add Category</Link>
                         </li>
                         <li>
-                           <Link to="/form-wizard">List Category</Link>
+                           <Link to="/List-Category">List Category</Link>
                         </li>                       
                      </ul>
                   </li>
 
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        OrderList.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                      <Link
@@ -176,57 +201,58 @@ class SideBar extends Component {
                         to="#"
                         
                      >
-                        <i className="flaticon-381-notepad"></i>
-                        <span className="nav-text Product">Orders</span>
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Order List</span>
                      </Link>
                      <ul >
                      <li>
-                           <Link to="order-list">Orders</Link>
+                           <Link to="New-Order">New Order</Link>
                         </li>
 						<li>
-                           <Link to="customer-list">Order List</Link>
-                        </li>                    
+                           <Link to="Cancelled-Order">Cancelled Order</Link>
+                        </li>   
+                        <li>
+                           <Link to="Completed-Order">Completed Order</Link>
+                        </li>                   
                      </ul>
                   </li>
 
-                  <li>
+                  {/* <li>
                      <Link
                         className="has-arrow ai-icon"
                         to="#"
                         
                      >
-                        <i className="flaticon-381-layer-1"></i>
-                        <span className="nav-text">Pages</span>
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">Customer List</span>
                      </Link>
-                     <ul >
+                     <ul>
                         <li>
                            <Link to="/page-register">Register</Link>
                         </li>
                         <li>
                            <Link to="/page-login">Login</Link>
                         </li>
-                        
-                      
                      </ul>
-                  </li>
+                  </li> */}
                   <li
                      className={`${
-                        Product.includes(path.slice(1)) ? "mm-active" : ""
+                        Customerlist.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                     
                      <Link
-                        to="widget-basic"
+                        to="Add-Customer-list"
                         className="ai-icon"
                         
                      >
-                        <i className="flaticon-381-settings-2"></i>
-                        <span className="nav-text">Settings</span>
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">User List</span>
                      </Link>
 
                   </li>
-                 
-                 
+                  
                  
                </MM>
 				<div className="plus-box">
@@ -234,10 +260,14 @@ class SideBar extends Component {
 					<Link className="btn bg-white text-black btn-rounded d-block" to="#">+Add Menus</Link>
 				</div>
                <div className="copyright">
-                  <p>
+                  {/* <p>
                      <strong>Koki Restaurant React Dashboard</strong> ©All Rights Reserved
                   </p>
-                  <p>by DexignZone</p>
+                  <p>by DexignZone</p> */}
+                  <p>
+                     <strong>New Do Hospitality</strong> © All Rights Reserved
+                  </p>
+                  {/* <p>by DexignZone</p> */}
                </div>
             </PerfectScrollbar>
          </div>

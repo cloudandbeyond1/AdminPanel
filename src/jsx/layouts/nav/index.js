@@ -9,7 +9,8 @@ const KokiNav = ({ title }) => {
    const onClick = (name) => setToggle(toggle === name ? "" : name);
    return (
       <Fragment>
-         <NavHader />
+
+      <NavHader />
          <SideBar />
          <Header
             onNote={() => onClick("chatbox")}
