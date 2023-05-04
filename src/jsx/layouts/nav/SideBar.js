@@ -136,7 +136,7 @@ class SideBar extends Component {
                      </Link>
                      <ul >
                         <li>
-                           <Link to="/ui-accordion">Add Restaurant</Link>
+                           <Link to="/Add-Restaurant">Add Restaurant</Link>
                         </li>
                         <li>
                            <Link to="/List-Restaurant">List Restaurant</Link>
