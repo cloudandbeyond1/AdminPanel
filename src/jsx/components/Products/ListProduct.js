@@ -60,7 +60,7 @@ const ListProduct = () => {
 	 <div className="col-12">
 		<div className="card">
 		   <div className="card-header">
-			  <h4 className="card-title">List Of Products</h4>
+			  <h4 className="card-title">List Of Product</h4>
 		   </div>
 		   <div className="card-body">
 			  <Table responsive className="w-100">

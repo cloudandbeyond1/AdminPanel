@@ -1,3 +1,4 @@
+
 import React,{useState,useEffect,useRef} from 'react';
 import {Link} from 'react-router-dom';
 import Commerce from '@chec/commerce.js';
@@ -8,10 +9,6 @@ import Restaurant from "../../../images/bannerimages/restaurantimage.png"
 const ListRestaurant = () => {
 	const commerce = new Commerce('pk_517267717706df3d39ab4a44126aae98baf632b72c612')
 	const [products, setProducts] = useState([])
-	// const [categories,setCategories] = useState([])
-  
-	
-  
 	useEffect(() => {
 	  commerce.products.list()
 		.then(res => {
@@ -98,7 +95,7 @@ const ListRestaurant = () => {
                              <div class="badge light badge-success">Publish</div>
                            </td>
 				           <td >
-                             <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                             <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                 <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                              </a>
 				           </td>
@@ -114,7 +111,7 @@ const ListRestaurant = () => {
                                <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                  <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                </a>
 				            </td>
@@ -130,7 +127,7 @@ const ListRestaurant = () => {
                             <div class="badge light badge-success">Publish</div>
                           </td>
                           <td >
-                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                             </a>
 				          </td>
@@ -146,7 +143,7 @@ const ListRestaurant = () => {
                              <div class="badge light badge-success">Publish</div>
                            </td>
 				           <td >
-                             <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                             <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                 <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                              </a>
 				           </td>
@@ -162,7 +159,7 @@ const ListRestaurant = () => {
                                <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                  <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                </a>
 				            </td>
@@ -178,7 +175,7 @@ const ListRestaurant = () => {
                             <div class="badge light badge-success">Publish</div>
                           </td>
                           <td >
-                            <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                            <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                             </a>
 				          </td>
@@ -194,7 +191,7 @@ const ListRestaurant = () => {
                              <div class="badge light badge-success">Publish</div>
                            </td>
 				           <td >
-                             <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                             <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                 <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                              </a>
 				           </td>
@@ -210,7 +207,7 @@ const ListRestaurant = () => {
                                <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                  <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                </a>
 				            </td>
@@ -226,7 +223,7 @@ const ListRestaurant = () => {
                             <div class="badge light badge-success">Publish</div>
                           </td>
                           <td >
-                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                             </a>
 				          </td>
@@ -242,7 +239,7 @@ const ListRestaurant = () => {
                              <div class="badge light badge-success">Publish</div>
                            </td>
 				           <td >
-                             <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                             <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                 <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                              </a>
 				           </td>
@@ -258,7 +255,7 @@ const ListRestaurant = () => {
                                <div class="badge light badge-success">Publish</div>
                             </td>
                             <td>
-                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                               <a  class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                  <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                                </a>
 				            </td>
@@ -274,7 +271,7 @@ const ListRestaurant = () => {
                             <div class="badge light badge-success">Publish</div>
                           </td>
                           <td >
-                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px",backgroundColor:"#ff720d"}}>
+                            <a class="btn btn-primary shadow btn-xs sharp mr-2" style={{height:"31px",width:"37px",padding:"6px",minWidth:"26px",minHeight:"26px"}}>
                                <i class="fa fa-edit" style={{fontSize:"18px"}}></i>
                             </a>
 				          </td>

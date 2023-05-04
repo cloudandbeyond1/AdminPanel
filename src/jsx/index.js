@@ -37,14 +37,22 @@ import Completedorder from "./components/Orders/Completedorder";
 
 import AddBanner from "./components/Banner/AddBanner";
 import ListBanner from "./components/Banner/ListBanner";
+
+//Restaurant
 import ListRestaurant from "./components/Restaurant/ListRestaurant";
+import AddRestaurant from "./components/Restaurant/AddRestaurant";
+
+
+import AddCategory from "./components/Category/AddCategory";
+import ListCategory from "./components/Category/ListCategory";
+
 
 const Markup = () => {
    const routes = [
 		/// Deshborad
 		{ url: "", component: Login },
 		
-		{ url: "Add-Product", component: Addproduct },
+		{ url: "Add-Product", component: Addproduct },		
 		{ url: "List-Product", component: ListProduct },
 		{ url: "Dash", component: Dash },
 		{ url: "Add-Customer-list", component: Customerlist },
@@ -53,7 +61,12 @@ const Markup = () => {
 		{ url: "Completed-Order", component: Completedorder },
 		{ url:"Add-Banner",component:AddBanner},
 		{ url:"List-Banner",component:ListBanner},
+		{ url: "Add-Restaurant", component: AddRestaurant},
 		{ url:"List-Restaurant",component:ListRestaurant},
+		{ url: "Add-Category", component: AddCategory},
+		{ url: "List-Category", component: ListCategory},
+		
+
    ];
 
    return (
