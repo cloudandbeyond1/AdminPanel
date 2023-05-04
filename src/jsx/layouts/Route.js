@@ -37,6 +37,8 @@ import AddRestaurant from "../components/Restaurant/AddRestaurant";
 import AddCategory from "../components/Category/AddCategory";
 import ListCategory from "../components/Category/ListCategory";
 
+//Settings
+import Merchant from "../components/Settings/Merchant";
 
 
 
@@ -69,6 +71,9 @@ const Routes = () => {
 
       { url:"List-Banner",component:ListBanner},
       { url:"List-Restaurant",component:ListRestaurant},
+
+
+      { url:"Merchant",component:Merchant},
 
 
    ];

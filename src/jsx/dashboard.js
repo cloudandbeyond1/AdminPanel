@@ -52,6 +52,9 @@ import AddRestaurant from "./components/Restaurant/AddRestaurant";
 import AddCategory from "./components/Category/AddCategory";
 import ListCategory from "./components/Category/ListCategory";
 
+
+import Merchant from "./components/Settings/Merchant";
+
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -74,6 +77,7 @@ const Dash = () => {
 		{ url:"Add-Restaurant",component:AddRestaurant},
 		{ url:"Add-Category",component:AddCategory},
 		{ url:"List-Category",component:ListCategory},
+		{ url:"Merchant",component:Merchant},
 
    ];
 

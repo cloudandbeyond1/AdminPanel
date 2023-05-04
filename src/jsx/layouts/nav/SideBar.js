@@ -78,7 +78,9 @@ class SideBar extends Component {
 
          Product = ["Add-Product","List-Product"],
 
-         CategoryList = ["Add-Category","List-Category"];
+         CategoryList = ["Add-Category","List-Category"],
+
+         Settings = ["Merchant","Shipping","Tax","Notifications"];
 
 
       return (
@@ -206,14 +208,44 @@ class SideBar extends Component {
                         <span className="nav-text Product">Order List</span>
                      </Link>
                      <ul >
-                     <li>
+                        <li>
                            <Link to="New-Order">New Order</Link>
                         </li>
-						<li>
+						      <li>
                            <Link to="Cancelled-Order">Cancelled Order</Link>
                         </li>   
                         <li>
                            <Link to="Completed-Order">Completed Order</Link>
+                        </li>                   
+                     </ul>
+                  </li>
+
+                  <li
+                     className={`${
+                        Settings.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Settings</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/Merchant">Merchant</Link>
+                        </li>
+						      <li>
+                           <Link to="Shipping">Shipping</Link>
+                        </li>   
+                        <li>
+                           <Link to="Tax">Tax</Link>
+                        </li>   
+                        <li>
+                           <Link to="Notifications">Notifications</Link>
                         </li>                   
                      </ul>
                   </li>

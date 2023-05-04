@@ -46,6 +46,9 @@ import AddRestaurant from "./components/Restaurant/AddRestaurant";
 import AddCategory from "./components/Category/AddCategory";
 import ListCategory from "./components/Category/ListCategory";
 
+//settings
+import Merchant from "./components/Settings/Merchant";
+
 
 const Markup = () => {
    const routes = [
@@ -65,7 +68,7 @@ const Markup = () => {
 		{ url:"List-Restaurant",component:ListRestaurant},
 		{ url: "Add-Category", component: AddCategory},
 		{ url: "List-Category", component: ListCategory},
-		
+		{ url: "Merchant", component:Merchant},
 
    ];
 

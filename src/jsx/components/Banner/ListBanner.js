@@ -243,4 +243,4 @@ const ListBanner = () => {
 	 </div>
   );
 };
-export default ListBanner
+export default ListBanner;

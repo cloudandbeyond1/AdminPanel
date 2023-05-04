@@ -23,10 +23,12 @@ class Addproduct extends React.Component {
 						  method="post"
 						  onSubmit={(e) => e.preventDefault()}
 					   >
-						  <div className="row">
+						  	<div className="row">
+
 							 <div className="col-xl-8">
+
 								<div className="form-group row">
-								<label className="col-sm-2 col-form-label col-form-label-sm">
+									<label className="col-sm-2 col-form-label col-form-label-sm">
 									  Product Name
 									  <span className="text-danger">*</span>
 								   </label>
@@ -40,8 +42,9 @@ class Addproduct extends React.Component {
 									  />
 								   </div>
 								</div>
+
 								<div className="form-group row">
-								<label className="col-sm-2 col-form-label col-form-label-sm">
+									<label className="col-sm-2 col-form-label col-form-label-sm">
 									 Price
 									  <span className="text-danger">*</span>
 								   </label>
@@ -57,7 +60,7 @@ class Addproduct extends React.Component {
 								</div>
 																
 								<div className="form-group row">
-								<label className="col-sm-2 col-form-label col-form-label-sm">
+									<label className="col-sm-2 col-form-label col-form-label-sm">
 									  Description{" "}
 									  <span className="text-danger">*</span>
 								   </label>
@@ -71,23 +74,24 @@ class Addproduct extends React.Component {
 									  ></textarea>
 								   </div>
 								</div>
+
 								<div className="form-group row">
-								<label className="col-sm-2 col-form-label col-form-label-sm">
+									<label className="col-sm-2 col-form-label col-form-label-sm">
 									  Upload Image{" "}
 									  <span className="text-danger">*</span>
 								   </label>
 								   <div className="col-sm-10">	
-                              <div className="custom-file">
-                                 <input
-                                    type="file"
-                                    className="custom-file-input"
-                                 />
-                                 <label className="custom-file-label">
-                                    Choose file
-                                 </label>
-                              </div>
-                           </div>
-						   </div>
+										<div className="custom-file">
+											<input
+												type="file"
+												className="custom-file-input"
+											/>
+											<label className="custom-file-label">
+												Choose file
+											</label>
+										</div>
+                           			</div>
+						   		</div>
 							 <div className="form-group row">
 								   <div className="col-lg-12 justify-content-center d-flex">
 									  <button
