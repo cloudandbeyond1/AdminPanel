@@ -39,7 +39,7 @@ import ListCategory from "../components/Category/ListCategory";
 
 //Settings
 import Merchant from "../components/Settings/Merchant";
-
+import Tax from "../components/Settings/Tax";
 
 
 
@@ -74,6 +74,7 @@ const Routes = () => {
 
 
       { url:"Merchant",component:Merchant},
+      { url:"Tax",component:Tax},
 
 
    ];

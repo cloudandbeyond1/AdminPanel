@@ -242,7 +242,7 @@ class SideBar extends Component {
                            <Link to="Shipping">Shipping</Link>
                         </li>   
                         <li>
-                           <Link to="Tax">Tax</Link>
+                           <Link to="/Tax">Tax</Link>
                         </li>   
                         <li>
                            <Link to="Notifications">Notifications</Link>

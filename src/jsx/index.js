@@ -48,6 +48,7 @@ import ListCategory from "./components/Category/ListCategory";
 
 //settings
 import Merchant from "./components/Settings/Merchant";
+import Tax from "./components/Settings/Tax";
 
 
 const Markup = () => {
@@ -69,6 +70,7 @@ const Markup = () => {
 		{ url: "Add-Category", component: AddCategory},
 		{ url: "List-Category", component: ListCategory},
 		{ url: "Merchant", component:Merchant},
+		{ url: "Tax", component:Tax},
 
    ];
 

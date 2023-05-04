@@ -54,6 +54,7 @@ import ListCategory from "./components/Category/ListCategory";
 
 
 import Merchant from "./components/Settings/Merchant";
+import Tax from "./components/Settings/Tax";
 
 const Dash = () => {
    const routes = [
@@ -78,6 +79,7 @@ const Dash = () => {
 		{ url:"Add-Category",component:AddCategory},
 		{ url:"List-Category",component:ListCategory},
 		{ url:"Merchant",component:Merchant},
+		{ url:"Tax",component:Tax},
 
    ];
 
