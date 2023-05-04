@@ -46,6 +46,7 @@ import Completedorder from "./components/Orders/Completedorder";
 import AddBanner from "./components/Banner/AddBanner";
 import ListBanner from "./components/Banner/ListBanner";
 import ListRestaurant from "./components/Restaurant/ListRestaurant";
+import AddRestaurant from "./components/Restaurant/AddRestaurant";
 
 const Dash = () => {
    const routes = [
@@ -66,6 +67,7 @@ const Dash = () => {
 		{ url:"Add-Banner",component:AddBanner},
 		{ url:"List-Banner",component:ListBanner},
 		{ url:"List-Restaurant",component:ListRestaurant},
+		{ url:"Add-Restaurant",component:AddRestaurant},
    ];
 
    return (
