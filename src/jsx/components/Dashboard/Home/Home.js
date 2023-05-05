@@ -42,7 +42,143 @@ const Home = () => {
    return (
       <Fragment>
          <div className="row">
+			
+
 			<div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-danger">
+                  <div className="card-body  p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={category} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Category</p>
+                           <h3 className="text-white">76</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-success">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={fork} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Restaurant</p>
+                           <h3 className="text-white">805</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+			<div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-purple">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={coupon} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Coupons</p>
+                           <h3 className="text-white">180</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+			<div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-warning">
+                  <div className="card-body  p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={clipboard} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total New Orders</p>
+                           <h3 className="text-white">68</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-info">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={boy} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Delivery boy</p>
+                           <h3 className="text-white">30</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+						{/* second row */}
+
+			
+
+            <div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-secondary">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={check} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Completed Orders</p>
+                           <h3 className="text-white">900</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-red">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={cancel} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Cancelled Orders</p>
+                           <h3 className="text-white">20</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+			
+            <div className="col-xl-3 col-lg-6 col-sm-6">
+               <div className="widget-stat card bg-pink">
+                  <div className="card-body p-4">
+                     <div className="media">
+                        <span className="mr-3">
+						<img src={sale} style={styles.imgicon}/>
+                        </span>
+                        <div className="media-body text-white text-right">
+                           <p className="mb-1">Total Sales</p>
+                           <h3 className="text-white">$7000</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+			{/* <div className="col-xl-3 col-lg-6 col-sm-6">
 				<div className="card overflow-hidden ">
 					<div className="card-header media border-0 pb-0">
 						<div className="media-body">
@@ -52,11 +188,7 @@ const Home = () => {
 						<img src={category} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-					{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData1}>
-							<SparklinesLine style={{ strokeWidth: 2}}  color="#ea4989" />
-						</Sparklines> */}
-					{/* Sparkline Chart End */}	
+					
 					</div>
 				</div>
 			</div>
@@ -71,11 +203,7 @@ const Home = () => {
 						<img src={fork} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData2}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart End */}
+						
 					</div>
 				</div>
 			</div>
@@ -90,11 +218,7 @@ const Home = () => {
 						<img src={boy} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData3}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart  End*/}
+						
 					</div>
 				</div>
 			</div>
@@ -109,14 +233,13 @@ const Home = () => {
 						<img src={coupon} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData4}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart  End */}
+					
 					</div>
 				</div>	
 			</div>
+
+
+
 			<div className="col-xl-3 col-lg-6 col-sm-6">
 				<div className="card overflow-hidden">
 					<div className="card-header media border-0 pb-0">
@@ -127,11 +250,7 @@ const Home = () => {
 						<img src={clipboard} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-					{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData1}>
-							<SparklinesLine style={{ strokeWidth: 2}}  color="#ea4989" />
-						</Sparklines> */}
-					{/* Sparkline Chart End */}	
+					
 					</div>
 				</div>
 			</div>
@@ -145,11 +264,7 @@ const Home = () => {
 						<img src={check} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData2}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart End */}
+						
 					</div>
 				</div>
 			</div>
@@ -163,11 +278,7 @@ const Home = () => {
 						<img src={cancel} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData3}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart  End*/}
+						
 					</div>
 				</div>
 			</div>
@@ -181,14 +292,10 @@ const Home = () => {
 						<img src={sale} style={styles.imgicon}/>
 					</div>
 					<div className="card-body pt-4 p-0">
-						{/* Sparkline Chart  */}
-						{/* <Sparklines data={sampleData4}>
-							<SparklinesLine style={{ strokeWidth: 2}} color="#ea4989" />
-						</Sparklines> */}
-						{/* Sparkline Chart  End */}
+						
 					</div>
 				</div>	
-			</div>
+			</div> */}
 			
 			<div className="col-xl-9 col-xxl-8 col-lg-12 col-sm-12">
 				<div className="card">
@@ -207,6 +314,7 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
+					
 					<div className="card-body p-0">
 						<div className="table-responsive ">
 							<table className="table order-request ">

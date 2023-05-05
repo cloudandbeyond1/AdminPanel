@@ -24,7 +24,7 @@ const AddBanner = () => {
                     {/* Dropdown */}
                   <div class="form-group" >
                      <label>Select Restaurant</label>
-                       <select name="rid" class="form-control" required="" style={{borderRadius:"0px",height:"40px"}}>
+                       <select name="rid" class="form-control" required="" >
 						  <option value="0">Unclickable</option>
 						  <option value="1">M H Maisur House &amp; Fency Dhosa</option>
 						  <option value="2">KHODIYAR KRUPA DABELI &amp; VADAPAV</option>
@@ -43,7 +43,7 @@ const AddBanner = () => {
                       {/* Dropdown */}
 					<div class="form-group" >
                         <label>Banner Status</label>
-                           <select name="status" class="form-control" required="" style={{borderRadius:"0px",height:"40px"}}>
+                           <select name="status" class="form-control" required="" >
 							   <option value="0">Publish</option>
 							   <option value="1">UnPublish</option>	
 						   </select>
