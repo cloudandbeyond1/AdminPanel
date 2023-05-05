@@ -40,7 +40,8 @@ import ListCategory from "../components/Category/ListCategory";
 //Settings
 import Merchant from "../components/Settings/Merchant";
 import Tax from "../components/Settings/Tax";
-
+import ProductDetail from "../components/Products/ProductDetail";
+import ProductList from "../components/Products/ProductList";
 
 
 const Routes = () => {
@@ -75,8 +76,8 @@ const Routes = () => {
 
       { url:"Merchant",component:Merchant},
       { url:"Tax",component:Tax},
-
-
+      { url: "Product-Detail", component: ProductDetail},
+      { url: "Product-List", component: ProductList},
    ];
 
    return (
