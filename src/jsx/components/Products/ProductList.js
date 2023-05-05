@@ -7,7 +7,6 @@ import { starOne, starTwo, starThree, starFour, starFive } from "./ProductStar";
 const ProductList = (props) => {
    console.log(props,"props");
    const {
-      id,
       name,
       image,
       description,
@@ -57,19 +56,11 @@ const ProductList = (props) => {
 						   <span className="item">{permalink}</span>
 						</p>
 						<p> Brand: <span className="item">{permalink}</span>  </p>
-						{/*<p className="text-content" dangerouslySetInnerHTML={{__html: description}}></p> */}
 					 </div>
 				  </div>
             <div className="row">
                <div className="col-md-12 col-xxl-12">
                <div className="new-arrival-content position-relative">
-                
-                
-                {/* <p>
-                   Product code:{" "}
-                   <span className="item">{permalink}</span>
-                </p>
-                <p> Brand: <span className="item">{permalink}</span>  </p> */}
                 <p className="text-content" dangerouslySetInnerHTML={{__html: description}}></p>
               </div>
                </div>
