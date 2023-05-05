@@ -14,7 +14,7 @@ import Profile from "../components/Dashboard/Profile/Profile";
 import Companies from "../components/Dashboard/Companies/Companies";
 import Statistics from "../components/Dashboard/Statistics/Statistics";
 import SearchJobs from "../components/Dashboard/SearchJobs/SearchJobs";
-import Dash from "../dashboard";
+import Dash from "../components/Dashboard/Dash";
 
 //Product
 
@@ -41,6 +41,8 @@ import ListCategory from "../components/Category/ListCategory";
 import Merchant from "../components/Settings/Merchant";
 import Tax from "../components/Settings/Tax";
 
+
+import Login from "../pages/Login";
 
 
 const Routes = () => {
@@ -75,6 +77,7 @@ const Routes = () => {
 
       { url:"Merchant",component:Merchant},
       { url:"Tax",component:Tax},
+      { url:"Login",component:Login},
 
 
    ];

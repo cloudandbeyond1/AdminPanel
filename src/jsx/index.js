@@ -21,7 +21,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
 
 /// Bo
-import Dash from "./dashboard";
+import Dash from "./components/Dashboard/dashboard" ;
 /// App
 /// Product List
 import Addproduct from "./components/Products/Addproduct";

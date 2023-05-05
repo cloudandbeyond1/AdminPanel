@@ -332,7 +332,7 @@ const Header = ({ onNote, toggle, onProfile, onActivity, onNotification}) => {
                            </Link>
                            
                            <Link
-                              to="/login"
+                              to="/Login"
                               className="dropdown-item ai-icon"
                            >
                               <svg
