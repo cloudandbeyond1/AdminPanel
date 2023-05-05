@@ -54,8 +54,8 @@ import Tax from "../Settings/Tax";
 
 import Login from "../../pages/Login";
 
-import ProductDetail from "./components/Products/ProductDetail";
-import ProductList from "./components/Products/ProductList";
+import ProductDetail from "../Products/ProductDetail";
+import ProductList from "../Products/ProductList";
 
 
 const Dash = () => {
