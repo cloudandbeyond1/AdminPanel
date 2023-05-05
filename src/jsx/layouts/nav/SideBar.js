@@ -239,7 +239,7 @@ class SideBar extends Component {
                            <Link to="/Merchant">Merchant</Link>
                         </li>
 						      <li>
-                           <Link to="Shipping">Shipping</Link>
+                           <Link to="/Shipping">Shipping</Link>
                         </li>   
                         <li>
                            <Link to="/Tax">Tax</Link>
