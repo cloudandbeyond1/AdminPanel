@@ -4,57 +4,55 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 /// Css
-import "./index.css";
-import "./chart.css";
+import "../../index.css";
+import "../../chart.css";
 
 /// Layout
-import Nav from "./layouts/nav";
-import Footer from "./layouts/Footer";
+import Nav from "../../layouts/nav";
+import Footer from "../../layouts/Footer";
 
 
 /// Pages
-import Registration from "./pages/Registration";
 
-import LockScreen from "./pages/LockScreen";
-
-import ForgotPassword from "./pages/ForgotPassword";
 /// Widget
 
 /// Deshboard
 
 
-import Home from "./components/Dashboard/Home/Home";
-import Companies from "./components/Dashboard/Companies/Companies";
-import Analytics from "./components/Dashboard/Analytics/Analytics";
-import Review from "./components/Dashboard/Review/Review";
-import Order from "./components/Dashboard/Order/Order";
-import Orderlist from "./components/Dashboard/Orderlist/Orderlist";
-import Profile from "./components/Dashboard/Profile/Profile";
+import Home from "../Dashboard/Home/Home";
+import Companies from "../Dashboard/Companies/Companies";
+import Analytics from "../Dashboard/Analytics/Analytics";
+import Review from "../Dashboard/Review/Review";
+import Order from "../Dashboard/Order/Order";
+import Orderlist from "../Dashboard/Orderlist/Orderlist";
+import Profile from "../Dashboard/Profile/Profile";
 /// Bo
 
 /// App
 /// Product List
-import Addproduct from "./components/Products/Addproduct";
-import ListProduct from "./components/Products/ListProduct"
-import Customerlist from "./components/Customer/Customerlist";
+import Addproduct from "../Products/Addproduct";
+import ListProduct from "../Products/ListProduct"
+import Customerlist from "../Customer/Customerlist";
 
 /// Order List
-import NewOrder from "./components/Orders/NewOrder";
-import CancelledOrder from "./components/Orders/CancelledOrder"
-import Completedorder from "./components/Orders/Completedorder";
+import NewOrder from "../Orders/NewOrder";
+import CancelledOrder from "../Orders/CancelledOrder"
+import Completedorder from "../Orders/Completedorder";
 
-import AddBanner from "./components/Banner/AddBanner";
-import ListBanner from "./components/Banner/ListBanner";
+import AddBanner from "../Banner/AddBanner";
+import ListBanner from "../Banner/ListBanner";
 
 //Restaurant
-import ListRestaurant from "./components/Restaurant/ListRestaurant";
-import AddRestaurant from "./components/Restaurant/AddRestaurant";
-import AddCategory from "./components/Category/AddCategory";
-import ListCategory from "./components/Category/ListCategory";
+import ListRestaurant from "../Restaurant/ListRestaurant";
+import AddRestaurant from "../Restaurant/AddRestaurant";
+import AddCategory from "../Category/AddCategory";
+import ListCategory from "../Category/ListCategory";
 
 
-import Merchant from "./components/Settings/Merchant";
-import Tax from "./components/Settings/Tax";
+import Merchant from "../Settings/Merchant";
+import Tax from "../Settings/Tax";
+
+import Login from "../../pages/Login";
 
 import ProductDetail from "./components/Products/ProductDetail";
 import ProductList from "./components/Products/ProductList";
@@ -84,6 +82,7 @@ const Dash = () => {
 		{ url:"List-Category",component:ListCategory},
 		{ url:"Merchant",component:Merchant},
 		{ url:"Tax",component:Tax},
+		{ url:"Login",component:Login},
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
    ];
