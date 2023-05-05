@@ -31,7 +31,7 @@ import Profile from "../Dashboard/Profile/Profile";
 /// App
 /// Product List
 import Addproduct from "../Products/Addproduct";
-import ListProduct from "../Products/ListProduct"
+import ListProduct from "../Products/ListProduct";
 import Customerlist from "../Customer/Customerlist";
 
 /// Order List

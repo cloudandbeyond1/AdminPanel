@@ -17,7 +17,7 @@ import eb from "../../../../images/dishes/briyani2.jpg";
 import fb from "../../../../images/dishes/briyani3.jpg";
 import mushroom from "../../../../images/dishes/briyani4.jpg";
 
-
+import trend from "../../../../images/dashicons/trendmenu.jpg";
 
 
 
@@ -126,7 +126,6 @@ const Home = () => {
                </div>
             </div>
 						{/* second row */}
-
 			
 
             <div className="col-xl-3 col-lg-6 col-sm-6">
@@ -314,7 +313,7 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-					
+
 					<div className="card-body p-0">
 						<div className="table-responsive ">
 							<table className="table order-request ">
@@ -666,7 +665,7 @@ const Home = () => {
 									<div className="timeline-panel">
 										<div className="media mr-3">
 											<Link to={"/ecom-product-detail"}>	
-												<img alt="" width="90" src={require("./../../../../images/card/pic8.jpg").default} />
+												<img alt="" width="90" src={trend}/>
 											</Link>	
 											<div className="number">#1</div>
 										</div>
@@ -683,7 +682,7 @@ const Home = () => {
 									<div className="timeline-panel">
 										<div className="media mr-3">
 											<Link to={"/ecom-product-detail"}>	
-												<img alt="" width="90" src={require("./../../../../images/card/pic4.jpg").default} /> 
+												<img alt="" width="90" src={trend} /> 
 											</Link>	
 											<div className="number">#2</div>
 										</div>
@@ -700,7 +699,7 @@ const Home = () => {
 									<div className="timeline-panel">
 										<div className="media mr-3">
 											<Link to={"/ecom-product-detail"}>	
-												<img alt="" width="90" src={require("./../../../../images/card/pic9.jpg").default} />
+												<img alt="" width="90" src={trend} />
 											</Link>	
 											<div className="number">#3</div>
 										</div>
@@ -717,7 +716,7 @@ const Home = () => {
 									<div className="timeline-panel">
 										<div className="media mr-3">
 											<Link to={"/ecom-product-detail"}>	
-												<img alt="" width="90" src={require("./../../../../images/card/pic6.jpg").default} />
+												<img alt="" width="90" src={trend} />
 											</Link>	
 											<div className="number">#4</div>
 										</div>
@@ -734,7 +733,7 @@ const Home = () => {
 									<div className="timeline-panel">
 										<div className="media mr-3">
 											<Link to={"/ecom-product-detail"}>	
-												<img alt="" width="90" src={require("./../../../../images/card/pic10.jpg").default} />
+												<img alt="" width="90" src={trend} />
 											</Link>	
 											<div className="number">#5</div>
 										</div>

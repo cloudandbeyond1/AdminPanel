@@ -13,7 +13,7 @@ import bannermenu from "../../../images/dashicons/bannermenu.png";
 import homemenu from "../../../images/dashicons/homemenu.png";
 import productsmenu from "../../../images/dashicons/productsmenu.png";
 import usermenu from "../../../images/dashicons/usermenu.png";
-
+import settingmenu from "../../../images/dashicons/settingmenu.png";
 /// Menu
 import MetisMenu from "metismenujs";
 
@@ -231,7 +231,7 @@ class SideBar extends Component {
                         
                      >
                         {/* <i className="flaticon-381-notepad"></i> */}
-                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <img src={settingmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Settings</span>
                      </Link>
                      <ul >
