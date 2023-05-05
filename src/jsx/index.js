@@ -49,6 +49,8 @@ import ListCategory from "./components/Category/ListCategory";
 //settings
 import Merchant from "./components/Settings/Merchant";
 import Tax from "./components/Settings/Tax";
+import ProductDetail from "./components/Products/ProductDetail";
+import ProductList from "./components/Products/ProductList";
 
 
 
@@ -73,7 +75,8 @@ const Markup = () => {
 		{ url: "Merchant", component:Merchant},
 		{ url: "Tax", component:Tax},
 		{ url: "Register", component:Registration},
-
+		{ url: "Product-Detail", component: ProductDetail},
+		{ url: "Product-List", component: ProductList},
    ];
 
    return (

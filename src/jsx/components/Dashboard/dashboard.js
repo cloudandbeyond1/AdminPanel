@@ -54,6 +54,10 @@ import Tax from "../Settings/Tax";
 
 import Login from "../../pages/Login";
 
+import ProductDetail from "../Products/ProductDetail";
+import ProductList from "../Products/ProductList";
+
+
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -79,7 +83,8 @@ const Dash = () => {
 		{ url:"Merchant",component:Merchant},
 		{ url:"Tax",component:Tax},
 		{ url:"Login",component:Login},
-
+		{ url: "Product-Detail", component: ProductDetail},
+		{ url: "Product-List", component: ProductList},
    ];
 
    return (
