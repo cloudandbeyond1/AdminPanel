@@ -32,7 +32,7 @@ const ProductList = (props) => {
                 
 						<h4><Link to={{pathname: "/Product-Detail", state: {id: name}}} >{name}</Link></h4>
 						<div className="comment-review star-rating">
-						   {starOne}
+						   {starThree}
 						   <span className="review-text">(34 reviews) /</span>
 						   <Link
 							  className="product-review"
