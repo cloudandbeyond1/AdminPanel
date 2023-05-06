@@ -80,6 +80,8 @@ class SideBar extends Component {
 
          CategoryList = ["Add-Category","List-Category"],
 
+         Customer=["Customer-List"],
+
          Settings = ["Merchant","Shipping","Tax","Notifications"];
 
 
@@ -146,6 +148,7 @@ class SideBar extends Component {
                         </li>                                       
                      </ul>
                   </li>
+
                   <li
                      className={`${
                         BannerList.includes(path.slice(1)) ? "mm-active" : ""
@@ -226,6 +229,30 @@ class SideBar extends Component {
                                       
                      </ul>
                   </li>
+
+
+                  <li
+                     className={`${
+                        Customer.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Customers</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="Customer-List">Customer List</Link>
+                        </li>
+                        
+                     </ul>
+                  </li>
+
 
                   <li
                      className={`${
