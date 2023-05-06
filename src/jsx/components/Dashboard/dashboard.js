@@ -38,6 +38,8 @@ import Customerlist from "../Customer/Customerlist";
 import NewOrder from "../Orders/NewOrder";
 import CancelledOrder from "../Orders/CancelledOrder"
 import Completedorder from "../Orders/Completedorder";
+import OrderTracking from "../Orders/OrderTracking";
+import ProductOrder from "../Orders/ProductOrder";
 
 import AddBanner from "../Banner/AddBanner";
 import ListBanner from "../Banner/ListBanner";
@@ -85,6 +87,8 @@ const Dash = () => {
 		{ url:"Login",component:Login},
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
+		{ url: "Order-Tracking", component: OrderTracking},
+		{ url: "Product-Order", component: ProductOrder},
    ];
 
    return (

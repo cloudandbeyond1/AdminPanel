@@ -27,6 +27,8 @@ import Customerlist from "../components/Customer/Customerlist";
 import NewOrder from "../components/Orders/NewOrder";
 import CancelledOrder from "../components/Orders/CancelledOrder"
 import Completedorder from "../components/Orders/Completedorder";
+import OrderTracking from "../components/Orders/Order/OrderTracking";
+import ProductOrder from "../components/Orders/ProductOrder";
 
 //BannerList
 
@@ -81,6 +83,8 @@ const Routes = () => {
       { url:"Login",component:Login},
       { url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
+      { url: "Order-Tracking", component: OrderTracking},
+		{ url: "Product-Order", component: ProductOrder},
 
    ];
 

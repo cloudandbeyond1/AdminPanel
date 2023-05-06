@@ -70,7 +70,7 @@ class SideBar extends Component {
         
          Customerlist = ["Add-Customer-list"],
 
-         OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
+         OrderList = ["New-Order","Cancelled-Order","Completed-Order","Order-Tracking","Product-Order"],
 
          BannerList=["Add-Banner","List-Banner"],
 
@@ -205,18 +205,25 @@ class SideBar extends Component {
                      >
                         {/* <i className="flaticon-381-notepad"></i> */}
                         <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Order List</span>
+                        <span className="nav-text Product">Orders</span>
                      </Link>
                      <ul >
                         <li>
                            <Link to="New-Order">New Order</Link>
                         </li>
+                        <li>
+                           <Link to="Order-Tracking">Order Tracking</Link>
+                        </li>   
+                        <li>
+                           <Link to="Product-Order">Product Order</Link>
+                        </li>    
 						      <li>
                            <Link to="Cancelled-Order">Cancelled Order</Link>
                         </li>   
                         <li>
                            <Link to="Completed-Order">Completed Order</Link>
-                        </li>                   
+                        </li>      
+                                      
                      </ul>
                   </li>
 
