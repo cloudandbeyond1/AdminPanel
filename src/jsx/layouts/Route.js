@@ -42,7 +42,7 @@ import Merchant from "../components/Settings/Merchant";
 import Tax from "../components/Settings/Tax";
 import ProductDetail from "../components/Products/ProductDetail";
 import ProductList from "../components/Products/ProductList";
-
+import AddonProduct from "../components/Products/AddonProduct";
 import Login from "../pages/Login";
 
 
@@ -81,6 +81,7 @@ const Routes = () => {
       { url:"Login",component:Login},
       { url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
+      { url: "Addon-Product", component: AddonProduct},
 
    ];
 

@@ -4,7 +4,17 @@ import React,{useState,useEffect,useRef,Fragment} from 'react';
 
 import { Link } from "react-router-dom";
 import { starOne, starTwo, starThree, starFour, starFive } from "./ProductStar";
+import careimg from "../../../images/product/cares.png";
+
+
 const ProductList = (props) => {
+	const styles = {
+		imgicon: {
+		  height: "20px",
+		  width: "20px",
+		},
+	  }
+
    console.log(props,"props");
    const {
       name,
@@ -12,7 +22,8 @@ const ProductList = (props) => {
       description,
       is,
       price,
-      permalink
+      permalink,
+	  seo
    } = props.product;	
 
   return (
@@ -21,27 +32,17 @@ const ProductList = (props) => {
 			<div className="card-body">
 			   <div className="row m-b-30">
 				  <div className="col-md-5 col-xxl-12">
-					 <div className="new-arrival-product mt-4 mb-xxl-4 mb-md-0">
+					 <div className="new-arrival-product mt-5 mb-xxl-4 mb-md-0">
 						<div className="new-arrivals-img-contnent">
 						   <img className="img-fluid-product" src={image.url}  alt="" />
 						</div>
 					 </div>
 				  </div>
 				  <div className="col-md-7 col-xxl-12">
-					 <div className="new-arrival-content position-relative">
-                
-						<h4><Link to={{pathname: "/Product-Detail", state: {id: name}}} >{name}</Link></h4>
+					 <div className="new-arrival-content position-relative">                
+						<h3><Link to={{pathname: "/Product-Detail", state: {id: name}}} >{name}</Link></h3>
 						<div className="comment-review star-rating">
-						   {starThree}
-						   <span className="review-text">(34 reviews) /</span>
-						   <Link
-							  className="product-review"
-							  to="/ecom-product-list"
-						   >
-							  {" "}
-							  Write a review?
-						   </Link>
-							<p className="price">{price.formatted_with_symbol}</p>
+						    <p className="text-content" dangerouslySetInnerHTML={{__html: description}}></p>							
 						</div>
 						
 						<p>
@@ -51,17 +52,18 @@ const ProductList = (props) => {
 							  <i className="fa fa-check-circle text-success"></i>
 						   </span>
 						</p>
-						 <p>
+						<p className="itemprice" >{price.formatted_with_symbol}</p>
+						 {/* <p>
 						   Product code:{" "}
 						   <span className="item">{permalink}</span>
-						</p>
-						<p> Brand: <span className="item">{permalink}</span>  </p>
+						</p> */}
+						<p> <img src={careimg} style={styles.imgicon}/><span className="item ml-2">{seo.description}</span>  </p>
 					 </div>
 				  </div>
             <div className="row">
                <div className="col-md-12 col-xxl-12">
                <div className="new-arrival-content position-relative">
-                <p className="text-content" dangerouslySetInnerHTML={{__html: description}}></p>
+                {/* <p className="text-content" dangerouslySetInnerHTML={{__html: description}}></p> */}
               </div>
                </div>
             </div>

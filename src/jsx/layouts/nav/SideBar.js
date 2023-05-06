@@ -76,7 +76,7 @@ class SideBar extends Component {
 
          Restaurant=["Add-Restaurant","List-Restaurant"],
 
-         Product = ["Add-Product","List-Product"],
+         Product = ["Add-Product","List-Product","Addon-Product"],
 
          CategoryList = ["Add-Category","List-Category"],
 
@@ -119,7 +119,11 @@ class SideBar extends Component {
                         </li>                     
                         <li>
                            <Link to="/List-Product">Product List</Link>
-                        </li>                      
+                        </li>    
+                        <li>
+                           <Link to="/Addon-Product">Add on Product</Link>
+                        </li> 
+                                         
                      </ul>
                   </li>
                 

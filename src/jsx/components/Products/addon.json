@@ -1,0 +1,78 @@
+
+[
+
+{
+
+"acc_id": "1",
+
+"Name":"Salan.",
+
+"Category":"Choose Your Free Accompaniment",
+
+"Price":"₹0",
+
+"brimg":"salan.jpg"
+
+},
+
+{
+
+"acc_id": "2",
+
+"Name":"Raita.",
+
+"Category":"Choose Your Free Accompaniment",
+
+"Price":"₹0",
+
+"brimg":"raita.jpg"
+
+},
+
+{
+
+"acc_id": "3",
+
+"Name":"I Love Biryani without adding anything.",
+
+"Category":"Choose Your Free Accompaniment",
+
+"Price":"₹0",
+
+"brimg":"lovebriyani.jpg"
+
+},
+
+{
+
+"acc_id": "4",
+
+"Name":"Extra Spicy",
+
+"Category":"Any changes in spice level?",
+
+"Price":"₹0",
+
+"brimg":"spicy.jpg"
+
+},
+
+{
+
+"acc_id": "5",
+
+"Name":"Paneer 65 (10 pcs)",
+
+"Category":"Kebabs",
+
+"Price":"₹245",
+
+"brimg":"panner.jpg"
+
+}
+]
+
+
+
+
+
