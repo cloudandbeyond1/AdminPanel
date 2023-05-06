@@ -4,6 +4,11 @@ import Commerce from '@chec/commerce.js';
 import React,{useState,useEffect,useRef,Fragment} from 'react';
 import { useLocation,useParams} from 'react-router-dom';
 import { starOne, starTwo, starThree, starFour, starFive } from "./ProductStar";
+import careimg from "../../../images/product/cares.png";
+import persons from "../../../images/product/persons.png";
+import watch from "../../../images/product/watch.png";
+
+import extra from "./addon.json";
 
 const ProductDetail = () => {
 
@@ -29,6 +34,12 @@ console.log(location.state.id,"match");
    const singleProductData = products.filter( (list) => list.name===location.state.id);
    console.log(singleProductData,"singleProductData");
  
+   const styles = {
+		imgicon: {
+		  height: "20px",
+		  width: "20px",
+		},     
+	  }
 
    return (
     <div>
@@ -39,53 +50,20 @@ console.log(location.state.id,"match");
                <div className="card">
                   <div className="card-body">
                      <div className="row">
-						<div className="col-xl-3 ">
+						<div className="col-md-6 col-xxl-12">
 							<div className="tab-content">
+                     <h2>{product.name}</h2>
 								<div role="tabpanel" className="tab-pane fade show active" id="first">
 									<img className="img-fluid" src={product.image.url} alt="" />
-								</div>
-								<div role="tabpanel" className="tab-pane fade" id="second">
-									<img className="img-fluid" src={product.image.url} alt="" />
-								</div>
-								<div role="tabpanel" className="tab-pane fade" id="third">
-									<img className="img-fluid" src={product.image.url}	 alt="" />
-								</div>
-								<div role="tabpanel" className="tab-pane fade" id="for">
-									<img className="img-fluid" src={product.image.url} alt="" />
-								</div>
+								</div>							
 							</div>
-							<div className="tab-slide-content new-arrival-product mb-4 mb-xl-0">
+							<div className="tab-slide-content new-arrival-product mt-2 mb-4 mb-xl-0">
 							
-								<ul className="nav slide-item-list mt-3" role="tablist">
-									<li role="presentation" className="show">
-										<a href="#first" role="tab" data-toggle="tab">
-											<img className="img-fluid" src={product.image.url} alt="" width="50" />
-										</a>
-									</li>
-									<li role="presentation">
-										<a href="#second" role="tab" data-toggle="tab"><img className="img-fluid" src={product.image.url} alt="" width="50" /></a>
-									</li>
-									<li role="presentation">
-										<a href="#third" role="tab" data-toggle="tab"><img className="img-fluid" src={product.image.url} alt="" width="50" /></a>
-									</li>
-									<li role="presentation">
-										<a href="#for" role="tab" data-toggle="tab"><img className="img-fluid" src={product.image.url} alt="" width="50" /></a>
-									</li>
-								</ul>
-							</div>
-						</div>	
-                        <div className="col-xl-9 col-lg-6  col-md-6 col-xxl-7 col-sm-12">
-                           <div className="product-detail-content">
+                     <div className="product-detail-content">
                               <div className="new-arrival-content pr">
                                  <h4 >{product.name}</h4>
-                                 <div className="star-rating d-inline mb-2">
-                                    {starThree} 
-									<span className="review-text"> (34 reviews) / </span>
-                                    <Link className="product-review" to="#">
-                                       Write a review?
-                                    </Link>
-                                 </div>
-                                 <p className="price">{product.price.formatted_with_symbol}</p>
+                                  <p className="text-content" dangerouslySetInnerHTML={{__html: product.description}}></p>
+                                 <p className="itemprice py-2">{product.price.formatted_with_symbol}</p>
                                  <p>
                                     Availability:
                                     <span className="item">
@@ -93,87 +71,26 @@ console.log(location.state.id,"match");
                                        <i className="fa fa-shopping-basket"></i>
                                     </span>
                                  </p>
-                                 <p>
-                                    Product code:
-                                    <span className="item">{product.permalink}</span>
-                                 </p>
-                                 <p>
-                                    Brand: <span className="item">{product.permalink}</span>
-                                 </p>
-                                 <p className="text-content" dangerouslySetInnerHTML={{__html: product.description}}></p>
-                                 <div className="filtaring-area my-3">
-                                    <div className="size-filter">
-                                       <h4 className="m-b-15">Select size</h4>
-
-                                       <div
-                                          className="btn-group"
-                                          data-toggle="buttons"
-                                       >
-                                          <label className="btn btn-outline-primary light btn-sm">
-                                             <input
-                                                type="radio"
-                                                className="position-absolute invisible"
-                                                name="options"
-                                                id="option5"
-                                             />
-                                             XS
-                                          </label>
-                                          <label className="btn btn-outline-primary light btn-sm">
-                                             <input
-                                                type="radio"
-                                                className="position-absolute invisible"
-                                                name="options"
-                                                id="option1"
-                                             />
-                                             SM
-                                          </label>
-                                          <label className="btn btn-outline-primary light btn-sm">
-                                             <input
-                                                type="radio"
-                                                className="position-absolute invisible"
-                                                name="options"
-                                                id="option2"
-                                             />
-                                             MD
-                                          </label>
-                                          <label className="btn btn-outline-primary light btn-sm">
-                                             <input
-                                                type="radio"
-                                                className="position-absolute invisible"
-                                                name="options"
-                                                id="option3"
-                                             />
-                                             LG
-                                          </label>
-                                          <label className="btn btn-outline-primary light btn-sm">
-                                             <input
-                                                type="radio"
-                                                className="position-absolute invisible"
-                                                name="options"
-                                                id="option4"
-                                             />
-                                             XL
-                                          </label>
-                                       </div>
-                                    </div>
+                                 <div className="row">
+                                 <p className="ml-2"> <img src={watch} style={styles.imgicon}/><span className="item ml-2">25 minutes for preparation</span>  </p>
+                                 <p className="ml-4"> <img src={persons} style={styles.imgicon}/><span className="item ml-2">Serves 1-2</span>  </p>
+                                 <p className="ml-4"> <img src={careimg} style={styles.imgicon}/><span className="item ml-2">{product.seo.description}</span>  </p>
                                  </div>
-                                 <div className="col-2 px-0">
-                                    <input
-                                       type="number"
-                                       name="num"
-                                       className="form-control input-btn input-number"
-                                       defaultValue="1"
-                                    />
-                                 </div>
-                                 <div className="shopping-cart mt-3">
-                                    <Link
-                                       className="btn btn-primary btn-lg"
-                                       to="#"
-                                    >
-                                       <i className="fa fa-shopping-basket mr-2"></i>
-                                       Add to cart
-                                    </Link>
-                                 </div>
+                              </div>
+                           </div>
+							</div>
+						</div>	
+                        <div className="col-md-6 col-xxl-12">
+                           <div className="product-detail-content">
+                              <div className="new-arrival-content pr">
+                                 <h4>Choose your accomplishment</h4>
+                                 {extra.map((data) => (
+                                 <div className="itemCheck_data mt-3">
+                                 <img className="itemCheck_logo" src={product.image.url} alt="" />
+<div className="itemCheck_datatext">{data.Name}</div>
+<p className="itemCheck_price">{data.Price}</p>
+                                 </div>     
+                                 ))}                       
                               </div>
                            </div>
                         </div>
