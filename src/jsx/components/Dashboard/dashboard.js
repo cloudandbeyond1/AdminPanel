@@ -59,7 +59,7 @@ import Login from "../../pages/Login";
 
 import ProductDetail from "../Products/ProductDetail";
 import ProductList from "../Products/ProductList";
-
+import AddonProduct from "../Products/AddonProduct";
 
 const Dash = () => {
    const routes = [
@@ -89,8 +89,11 @@ const Dash = () => {
 		{ url:"Login",component:Login},
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
+		{ url: "Addon-Product", component: AddonProduct},
+
 		{ url: "Order-Tracking", component: OrderTracking},
 		{ url: "Product-Order", component: ProductOrder},
+
    ];
 
    return (
