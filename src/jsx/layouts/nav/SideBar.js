@@ -13,7 +13,7 @@ import bannermenu from "../../../images/dashicons/bannermenu.png";
 import homemenu from "../../../images/dashicons/homemenu.png";
 import productsmenu from "../../../images/dashicons/productsmenu.png";
 import usermenu from "../../../images/dashicons/usermenu.png";
-
+import settingmenu from "../../../images/dashicons/settingmenu.png";
 /// Menu
 import MetisMenu from "metismenujs";
 
@@ -70,7 +70,7 @@ class SideBar extends Component {
         
          Customerlist = ["Add-Customer-list"],
 
-         OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
+         OrderList = ["New-Order","Cancelled-Order","Completed-Order","Order-Tracking","Product-Order"],
 
          BannerList=["Add-Banner","List-Banner"],
 
@@ -79,6 +79,8 @@ class SideBar extends Component {
          Product = ["Add-Product","List-Product","Addon-Product"],
 
          CategoryList = ["Add-Category","List-Category"],
+
+         Customer=["Customer-List"],
 
          Settings = ["Merchant","Shipping","Tax","Notifications"];
 
@@ -150,6 +152,7 @@ class SideBar extends Component {
                         </li>                                       
                      </ul>
                   </li>
+
                   <li
                      className={`${
                         BannerList.includes(path.slice(1)) ? "mm-active" : ""
@@ -209,20 +212,51 @@ class SideBar extends Component {
                      >
                         {/* <i className="flaticon-381-notepad"></i> */}
                         <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Order List</span>
+                        <span className="nav-text Product">Orders</span>
                      </Link>
                      <ul >
                         <li>
                            <Link to="New-Order">New Order</Link>
                         </li>
+                        <li>
+                           <Link to="Order-Tracking">Order Tracking</Link>
+                        </li>   
+                        <li>
+                           <Link to="Product-Order">Product Order</Link>
+                        </li>    
 						      <li>
                            <Link to="Cancelled-Order">Cancelled Order</Link>
                         </li>   
                         <li>
                            <Link to="Completed-Order">Completed Order</Link>
-                        </li>                   
+                        </li>      
+                                      
                      </ul>
                   </li>
+
+
+                  <li
+                     className={`${
+                        Customer.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Customers</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="Customer-List">Customer List</Link>
+                        </li>
+                        
+                     </ul>
+                  </li>
+
 
                   <li
                      className={`${
@@ -235,7 +269,7 @@ class SideBar extends Component {
                         
                      >
                         {/* <i className="flaticon-381-notepad"></i> */}
-                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <img src={settingmenu} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Settings</span>
                      </Link>
                      <ul >

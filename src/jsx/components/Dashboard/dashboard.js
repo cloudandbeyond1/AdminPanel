@@ -31,13 +31,15 @@ import Profile from "../Dashboard/Profile/Profile";
 /// App
 /// Product List
 import Addproduct from "../Products/Addproduct";
-import ListProduct from "../Products/ListProduct"
+import ListProduct from "../Products/ListProduct";
 import Customerlist from "../Customer/Customerlist";
 
 /// Order List
 import NewOrder from "../Orders/NewOrder";
 import CancelledOrder from "../Orders/CancelledOrder"
 import Completedorder from "../Orders/Completedorder";
+import OrderTracking from "../Orders/OrderTracking";
+import ProductOrder from "../Orders/ProductOrder";
 
 import AddBanner from "../Banner/AddBanner";
 import ListBanner from "../Banner/ListBanner";
@@ -51,6 +53,7 @@ import ListCategory from "../Category/ListCategory";
 
 import Merchant from "../Settings/Merchant";
 import Tax from "../Settings/Tax";
+import Shipping from "../Settings/Shipping";
 
 import Login from "../../pages/Login";
 
@@ -82,10 +85,15 @@ const Dash = () => {
 		{ url:"List-Category",component:ListCategory},
 		{ url:"Merchant",component:Merchant},
 		{ url:"Tax",component:Tax},
+		{ url:"Shipping",component:Shipping},
 		{ url:"Login",component:Login},
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
 		{ url: "Addon-Product", component: AddonProduct},
+
+		{ url: "Order-Tracking", component: OrderTracking},
+		{ url: "Product-Order", component: ProductOrder},
+
    ];
 
    return (
