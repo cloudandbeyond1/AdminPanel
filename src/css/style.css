@@ -26302,7 +26302,7 @@ code {
   .widget-stat .media .media-body span {
     margin-left: 5px; }
 .widget-stat[class*="bg-"] .media > span {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.6);
   color: #fff; }
 .widget-stat[class*="bg-"] .progress {
   background-color: rgba(255, 255, 255, 0.25) !important; }
