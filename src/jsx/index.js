@@ -21,14 +21,14 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
 
 /// Bo
-import Dash from "./dashboard";
+import Dash from "./components/Dashboard/dashboard";
 /// App
 /// Product List
 import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
 
 
-import Customerlist from "./components/Customer/Customerlist";
+import Userlist from "./components/Customer/Userlist";
 
 /// Order List
 import NewOrder from "./components/Orders/NewOrder";
@@ -63,7 +63,7 @@ const Markup = () => {
 		{ url: "Add-Product", component: Addproduct },		
 		{ url: "List-Product", component: ListProduct },
 		{ url: "Dash", component: Dash },
-		{ url: "Add-Customer-list", component: Customerlist },
+		
 		{ url: "New-Order", component: NewOrder },
 		{ url: "Cancelled-Order", component: CancelledOrder },
 		{ url: "Completed-Order", component: Completedorder },
@@ -78,7 +78,7 @@ const Markup = () => {
 		{ url: "Register", component:Registration},
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
-		
+		{ url: "UserList", component: Userlist},
 
 
    ];

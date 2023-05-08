@@ -21,7 +21,7 @@ import Dash from "../dashboard";
 import Addproduct from "../components/Products/Addproduct";
 import Listproduct from "../components/Products/ListProduct";
 
-import Customerlist from "../components/Customer/Customerlist";
+import Userlist from "../components/Customer/Userlist";
 
 /// Order List
 import NewOrder from "../components/Orders/NewOrder";
@@ -61,7 +61,7 @@ const Routes = () => {
       { url: "companies", component: Companies },
       { url: "search-job", component: SearchJobs },
       { url: "statistics", component: Statistics },
-      { url: "Add-Customer-list", component: Customerlist },
+      
       { url: "New-Order", component: NewOrder },
 		{ url: "Cancelled-Order", component: CancelledOrder },
 		{ url: "Completed-Order", component: Completedorder },
@@ -84,7 +84,7 @@ const Routes = () => {
       { url:"Login",component:Login},
       { url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
-    
+      { url: "UserList", component: Userlist},
 
 
    ];

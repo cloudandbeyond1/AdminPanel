@@ -68,7 +68,7 @@ class SideBar extends Component {
 			
          ],
         
-         Customerlist = ["Add-Customer-list"],
+         Userlist = ["User-list"],
 
          OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
 
@@ -274,12 +274,12 @@ class SideBar extends Component {
                   </li> */}
                   <li
                      className={`${
-                        Customerlist.includes(path.slice(1)) ? "mm-active" : ""
+                       Userlist.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
                     
                      <Link
-                        to="Add-Customer-list"
+                        to="UserList"
                         className="ai-icon"
                         
                      >

@@ -60,7 +60,7 @@ const Userlist = () => {
 		<div className="card">
 			
 		   <div className="card-header">
-			  <h4 className="card-title">Customer List</h4>
+			  <h4 className="card-title">User List</h4>
 		   </div>
 
 		   <div className="card-body">
