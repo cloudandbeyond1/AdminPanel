@@ -56,6 +56,8 @@ import ProductList from "./components/Products/ProductList";
 
 
 import Customerlist from "./components/Customer/Customerlist";
+import AddCustomer from "./components/Customer/AddCustomer";
+import ProductOrder from "./components/Restaurant/ProductOrder";
 
 const Markup = () => {
    const routes = [
@@ -82,7 +84,9 @@ const Markup = () => {
 		{ url: "Product-List", component: ProductList},
 		{ url: "UserList", component: Userlist},
 		{ url: "Customer-List", component: Customerlist},
-
+		{ url: "Add-Customer", component: AddCustomer},
+		{ url: "Product-Order", component: ProductOrder},
+		{ url:"Shipping",component:Shipping},
 
    ];
 

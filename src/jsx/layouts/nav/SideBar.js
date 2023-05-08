@@ -13,6 +13,8 @@ import bannermenu from "../../../images/dashicons/bannermenu.png";
 import homemenu from "../../../images/dashicons/homemenu.png";
 import productsmenu from "../../../images/dashicons/productsmenu.png";
 import usermenu from "../../../images/dashicons/usermenu.png";
+import settingsmenu from "../../../images/dashicons/settingmenu.png";
+import customer from "../../../images/dashicons/customerwhite.png";
 
 /// Menu
 import MetisMenu from "metismenujs";
@@ -255,35 +257,7 @@ class SideBar extends Component {
                      </ul>
                   </li>
 
-                  <li
-                     className={`${
-                        Settings.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        
-                     >
-                        {/* <i className="flaticon-381-notepad"></i> */}
-                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Settings</span>
-                     </Link>
-                     <ul >
-                        <li>
-                           <Link to="/Merchant">Merchant</Link>
-                        </li>
-						      <li>
-                           <Link to="/Shipping">Shipping</Link>
-                        </li>   
-                        <li>
-                           <Link to="/Tax">Tax</Link>
-                        </li>   
-                        <li>
-                           <Link to="Notifications">Notifications</Link>
-                        </li>                   
-                     </ul>
-                  </li>
+                  
 
                   {/* <li>
                      <Link
@@ -318,7 +292,7 @@ class SideBar extends Component {
                         
                      >
                         {/* <i className="flaticon-381-notepad"></i> */}
-                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <img src={customer} style={styles.imgicon} className="mr-2"/>
                         <span className="nav-text Product">Customer</span>
                      </Link>
                      <ul >
@@ -346,6 +320,36 @@ class SideBar extends Component {
                         <span className="nav-text">User List</span>
                      </Link>
 
+                  </li>
+
+                  <li
+                     className={`${
+                        Settings.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={settingsmenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Settings</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/Merchant">Merchant</Link>
+                        </li>
+						      <li>
+                           <Link to="/Shipping">Shipping</Link>
+                        </li>   
+                        <li>
+                           <Link to="/Tax">Tax</Link>
+                        </li>   
+                        <li>
+                           <Link to="Notifications">Notifications</Link>
+                        </li>                   
+                     </ul>
                   </li>
                   
                  
