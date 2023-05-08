@@ -84,8 +84,7 @@ const Routes = () => {
       { url:"Login",component:Login},
       { url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
-      { url: "Order-Tracking", component: OrderTracking},
-		{ url: "Product-Order", component: ProductOrder},
+    
 
 
    ];

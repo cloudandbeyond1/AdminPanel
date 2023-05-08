@@ -3,7 +3,7 @@ import Commerce from '@chec/commerce.js';
 import React,{useState,useEffect,useRef,Fragment} from 'react';
 
 import { Link } from "react-router-dom";
-import { starOne, starTwo, starThree, starFour, starFive } from "./ProductStar";
+
 import careimg from "../../../images/product/cares.png";
 
 
