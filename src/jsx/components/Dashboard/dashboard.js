@@ -32,7 +32,7 @@ import Profile from "../Dashboard/Profile/Profile";
 /// Product List
 import Addproduct from "../Products/Addproduct";
 import ListProduct from "../Products/ListProduct";
-import Userlist from "../Customer/Userlist";
+import Userlist from "../Users/Userlist";
 
 /// Order List
 import NewOrder from "../Orders/NewOrder";

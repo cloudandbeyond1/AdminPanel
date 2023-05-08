@@ -28,7 +28,7 @@ import Addproduct from "./components/Products/Addproduct";
 import ListProduct from "./components/Products/ListProduct"
 
 
-import Userlist from "./components/Customer/Userlist";
+import Userlist from "./components/Users/Userlist";
 
 /// Order List
 import NewOrder from "./components/Orders/NewOrder";

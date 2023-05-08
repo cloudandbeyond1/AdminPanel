@@ -80,6 +80,8 @@ class SideBar extends Component {
 
          CategoryList = ["Add-Category","List-Category"],
 
+         CustomerList= ["Customer-list"],
+
          Settings = ["Merchant","Shipping","Tax","Notifications"];
 
 
@@ -272,6 +274,22 @@ class SideBar extends Component {
                         </li>
                      </ul>
                   </li> */}
+                  <li
+                     className={`${
+                       CustomerList.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                    
+                     <Link
+                        to="Customer-List"
+                        className="ai-icon"
+                        
+                     >
+                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">Customer List</span>
+                     </Link>
+
+                  </li>
                   <li
                      className={`${
                        Userlist.includes(path.slice(1)) ? "mm-active" : ""
