@@ -61,6 +61,9 @@ import ProductList from "../Products/ProductList";
 import AddonProduct from "../Products/AddonProduct";
 
 import Customerlist from "../Customer/Customerlist";
+import AddCustomer from "../Customer/AddCustomer";
+import ProductOrder from "../Restaurant/ProductOrder";
+import OrderTracking from "../Restaurant/OrderTracking";
 
 const Dash = () => {
    const routes = [
@@ -94,6 +97,9 @@ const Dash = () => {
 		{ url: "UserList", component: Userlist},
 		
 		{ url: "Customer-List", component: Customerlist},
+		{ url: "Add-Customer", component: AddCustomer},
+		{ url: "Product-Order", component: ProductOrder},
+		{ url: "Order-Tracking", component: OrderTracking},
    ];
 
    return (

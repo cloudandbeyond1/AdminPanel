@@ -87,8 +87,8 @@ console.log(location.state.id,"match");
                                  {extra.map((data) => (
                                  <div className="itemCheck_data mt-3">
                                  <img className="itemCheck_logo" src={product.image.url} alt="" />
-<div className="itemCheck_datatext">{data.Name}</div>
-<p className="itemCheck_price">{data.Price}</p>
+                                    <div className="itemCheck_datatext">{data.Name}</div>
+                                    <p className="itemCheck_price">{data.Price}</p>
                                  </div>     
                                  ))}                       
                               </div>

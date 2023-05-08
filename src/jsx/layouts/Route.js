@@ -48,6 +48,11 @@ import ProductList from "../components/Products/ProductList";
 import Login from "../pages/Login";
 
 import Customerlist from "../components/Customer/Customerlist";
+import AddCustomer from "../components/Customer/AddCustomer";
+import ProductOrder from "../components/Restaurant/ProductOrder";
+import OrderTracking from "../components/Restaurant/OrderTracking";
+
+
 const Routes = () => {
    const routes = [
       /// Deshborad
@@ -86,8 +91,9 @@ const Routes = () => {
 		{ url: "Product-List", component: ProductList},
       { url: "UserList", component: Userlist},
       { url: "Customer-List", component: Customerlist},
-      
-
+      { url: "Add-Customer", component: AddCustomer},
+      { url: "Product-Order", component: ProductOrder},
+      { url: "Order-Tracking", component: OrderTracking},
 
    ];
 
