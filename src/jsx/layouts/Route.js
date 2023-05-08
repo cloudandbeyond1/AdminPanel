@@ -47,7 +47,7 @@ import ProductList from "../components/Products/ProductList";
 
 import Login from "../pages/Login";
 
-
+import Customerlist from "../components/Customer/Customerlist";
 const Routes = () => {
    const routes = [
       /// Deshborad
@@ -85,6 +85,8 @@ const Routes = () => {
       { url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
       { url: "UserList", component: Userlist},
+      { url: "Customer-List", component: Customerlist},
+      
 
 
    ];

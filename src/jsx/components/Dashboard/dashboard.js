@@ -60,6 +60,8 @@ import ProductDetail from "../Products/ProductDetail";
 import ProductList from "../Products/ProductList";
 import AddonProduct from "../Products/AddonProduct";
 
+import Customerlist from "../Customer/Customerlist";
+
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -91,7 +93,7 @@ const Dash = () => {
 		{ url: "Addon-Product", component: AddonProduct},
 		{ url: "UserList", component: Userlist},
 		
-
+		{ url: "Customer-List", component: Customerlist},
    ];
 
    return (

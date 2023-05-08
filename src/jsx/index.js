@@ -55,6 +55,8 @@ import ProductList from "./components/Products/ProductList";
 
 
 
+import Customerlist from "./components/Customer/Customerlist";
+
 const Markup = () => {
    const routes = [
 		/// Deshborad
@@ -79,6 +81,7 @@ const Markup = () => {
 		{ url: "Product-Detail", component: ProductDetail},
 		{ url: "Product-List", component: ProductList},
 		{ url: "UserList", component: Userlist},
+		{ url: "Customer-List", component: Customerlist},
 
 
    ];

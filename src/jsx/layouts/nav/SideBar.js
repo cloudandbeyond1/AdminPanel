@@ -80,7 +80,9 @@ class SideBar extends Component {
 
          CategoryList = ["Add-Category","List-Category"],
 
-         CustomerList= ["Customer-list"],
+         CustomerList= ["Customer-List","Add-Customer"],
+
+         RestaurantOrderList = ["Product-Order","Order-Tracking"],
 
          Settings = ["Merchant","Shipping","Tax","Notifications"];
 
@@ -131,6 +133,30 @@ class SideBar extends Component {
                 
                   <li
                      className={`${
+                        CategoryList.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Category</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/Add-Category">Add Category</Link>
+                        </li>
+                        <li>
+                           <Link to="/List-Category">List Category</Link>
+                        </li>                       
+                     </ul>
+                  </li>
+
+                  <li
+                     className={`${
                         Restaurant.includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
@@ -152,6 +178,31 @@ class SideBar extends Component {
                         </li>                                       
                      </ul>
                   </li>
+
+                  <li
+                     className={`${
+                        RestaurantOrderList.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Restaurant Orders</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="Product-Order">Product Order</Link>
+                        </li>
+                        <li>
+                           <Link to="Order-Tracking">Order Tracking</Link>
+                        </li>                       
+                     </ul>
+                  </li>
+
                   <li
                      className={`${
                         BannerList.includes(path.slice(1)) ? "mm-active" : ""
@@ -175,29 +226,7 @@ class SideBar extends Component {
                      </ul>
                   </li>
 
-                  <li
-                     className={`${
-                        CategoryList.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        
-                     >
-                        {/* <i className="flaticon-381-notepad"></i> */}
-                        <img src={categorymenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Category</span>
-                     </Link>
-                     <ul >
-                        <li>
-                           <Link to="/Add-Category">Add Category</Link>
-                        </li>
-                        <li>
-                           <Link to="/List-Category">List Category</Link>
-                        </li>                       
-                     </ul>
-                  </li>
+                  
 
                   <li
                      className={`${
@@ -274,22 +303,34 @@ class SideBar extends Component {
                         </li>
                      </ul>
                   </li> */}
+
+
+
                   <li
                      className={`${
-                       CustomerList.includes(path.slice(1)) ? "mm-active" : ""
+                        CustomerList.includes(path.slice(1)) ? "mm-active" : ""
+                        .includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
-                    
                      <Link
-                        to="Customer-List"
-                        className="ai-icon"
+                        className="has-arrow ai-icon"
+                        to="#"
                         
                      >
-                        <img src={usermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text">Customer List</span>
+                        {/* <i className="flaticon-381-notepad"></i> */}
+                        <img src={ordermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Customer</span>
                      </Link>
-
+                     <ul >
+                        <li>
+                           <Link to="Add-Customer">Add Customer</Link>
+                        </li>   
+                        <li>
+                           <Link to="Customer-List">Customer List</Link>
+                        </li>
+                     </ul>
                   </li>
+
                   <li
                      className={`${
                        Userlist.includes(path.slice(1)) ? "mm-active" : ""
