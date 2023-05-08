@@ -3,7 +3,6 @@ import Commerce from '@chec/commerce.js';
 import React,{useState,useEffect,useRef,Fragment} from 'react';
 
 import { Link } from "react-router-dom";
-
 import careimg from "../../../images/product/cares.png";
 
 

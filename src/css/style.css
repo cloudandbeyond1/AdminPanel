@@ -30336,3 +30336,40 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .bg-red{
   background-color: #EE3232 !important;
 }
+.new-arrival-content .itemCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  border: 1px solid Black;
+  border-radius: 0.5rem;
+  width: 38.4rem;
+  margin: auto auto 1rem;
+}
+.itemCheck_logo {
+  width: 7rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  margin-right: 0.8rem;
+}
+.itemCheck_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  border: 1px solid #9c9c9c;
+  border-radius: 0.5rem;
+  width: 38.4rem;
+} 
+.itemCheck_datatext {
+ 
+  padding: 10px 0;
+  width: 20rem;
+  flex-grow: 1;
+} 
+.itemCheck_price {
+  font-size: 1.8rem;
+  font-family: "Lato-Bold";
+  color: rgba(0,0,0,.85);
+  margin: 0 2.2rem;
+}

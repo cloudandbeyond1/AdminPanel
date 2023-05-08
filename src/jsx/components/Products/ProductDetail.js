@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Commerce from '@chec/commerce.js';
 import React,{useState,useEffect,useRef,Fragment} from 'react';
 import { useLocation,useParams} from 'react-router-dom';
-
 import careimg from "../../../images/product/cares.png";
 import persons from "../../../images/product/persons.png";
 import watch from "../../../images/product/watch.png";
@@ -87,8 +86,8 @@ console.log(location.state.id,"match");
                                  {extra.map((data) => (
                                  <div className="itemCheck_data mt-3">
                                  <img className="itemCheck_logo" src={product.image.url} alt="" />
-                                    <div className="itemCheck_datatext">{data.Name}</div>
-                                    <p className="itemCheck_price">{data.Price}</p>
+<div className="itemCheck_datatext">{data.Name}</div>
+<p className="itemCheck_price">{data.Price}</p>
                                  </div>     
                                  ))}                       
                               </div>
