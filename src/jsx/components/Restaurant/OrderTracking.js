@@ -58,7 +58,7 @@ class OrderTracking extends React.Component{
 											<li>
 												<div className="icon bg-primary"></div>
 												<Link to={"#"} className="timeline-panel text-muted" >
-													<h4 className="mb-2 mt-0">Payment Success</h4>
+													<h4 className="mb-2 mt-0">Payment Successs</h4>
 													<p className="fs-14 mb-0 ">Fri, 5 May 2023, 10:44 AM</p>
 												</Link >
 											</li>
