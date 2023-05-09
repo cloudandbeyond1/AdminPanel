@@ -59,6 +59,15 @@ import Customerlist from "./components/Customer/Customerlist";
 import AddCustomer from "./components/Customer/AddCustomer";
 import ProductOrder from "./components/Restaurant/ProductOrder";
 
+
+import AddCoupon from "./components/Coupon/AddCoupon";
+
+import ListCoupon from "./components/Coupon/ListCoupon";
+
+import AddDeliveryBoy from "./components/Delivery/AddDeliveryBoy";
+
+import ListDeliveryBoy from "./components/Delivery/ListDeliveryBoy";
+
 const Markup = () => {
    const routes = [
 		/// Deshborad
@@ -87,6 +96,10 @@ const Markup = () => {
 		{ url: "Add-Customer", component: AddCustomer},
 		{ url: "Product-Order", component: ProductOrder},
 		{ url:"Shipping",component:Shipping},
+		{ url: "Add-Coupon", component: AddCoupon},
+		{ url: "List-Coupon", component: ListCoupon},
+		{ url: "Add-Delivery", component: AddDeliveryBoy},
+		{ url: "List-Delivery", component: ListDeliveryBoy},
 
    ];
 
