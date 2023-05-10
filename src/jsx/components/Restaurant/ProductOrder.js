@@ -1,10 +1,41 @@
-import React from "react";
+import React,{useState,useEffect,useRef,Fragment} from 'react';
 
 import data from "./tabledata";
 import { Badge, Dropdown, Table } from "react-bootstrap";
 
 const ProductOrder = () => {
+
+   const url = new URL(
+      "https://api.chec.io/v1/orders"
+  );
+  
+  const headers = {
+      "X-Authorization": "sk_517265b2dc5cad78241fa72ca6aa2249255aecf041d43",
+      "Content-Type": "application/json",
+      "access-control-allow-methods":"GET, POST, OPTIONS, DELETE, PUT",
+      "access-control-allow-origin":"*",
+      "Cache-Control":"no-store, private",
+      "strict-transport-security":"max-age=15552000; includeSubDomains; preload",
+      "x-support":"http://slack.commercejs.com"
+  };
+  
+  const [Orders, setOrders] = useState([]);
+
+  useEffect(() => {
+   fetch(url, {
+      method: "GET",
+      headers: headers,
+  })
+  .then(response => response.json())
+   .then((data) => { 
+      return data,
+   setOrders(data.data)
+}) 
+ .catch(err => console.log(err))
+},[setOrders])
+console.log(Orders,"Orders");
    return (
+     
       <div className="h-80">
          
          <div className="row">
@@ -13,77 +44,56 @@ const ProductOrder = () => {
                   <div className="card-body">
                      <Table responsive className="table-responsive-xl" size="sm">
                         <thead>
-                           <tr>
-                              <th className="align-middle">
-                                 <div className="custom-control custom-checkbox ml-1">
-                                    <input
-                                       type="checkbox"
-                                       className="custom-control-input"
-                                       id="checkAll"
-                                    />
-                                    <label
-                                       className="custom-control-label"
-                                       htmlFor="checkAll"
-                                    ></label>
-                                 </div>
-                              </th>
-                              {data.productData.columns.map((p, i) => (
-                                 <th className="align-middle" key={i}>
-                                    {p}
+                           
+                           <tr>                              
+                                 <th className="align-middle">
+                                   Order Id
                                  </th>
-                              ))}
+                                 <th className="align-middle">
+                                   Email
+                                 </th>
+                                 <th className="align-middle">
+                                   Customer Name
+                                 </th>
+                                 <th className="align-middle">
+                                   Shipping Address
+                                 </th>
+                                 <th className="align-middle">
+                                   Status
+                                 </th>
+                                 <th className="align-middle">
+                                   Amount
+                                 </th>
                               <th></th>
                            </tr>
                         </thead>
                         <tbody id="orders">
-                           {data.productData.data.map((d, i) => (
+                           {Orders.map((d, i) => (
                               <tr key={i}>
-                                 {d.map((da, ii) => (
-                                    <td key={ii}>
-                                       {ii === 0 ? (
-                                          <div
-                                             className={`custom-control custom-checkbox checkbox-${
-                                                da === "Completed"
-                                                   ? "success"
-                                                   : da === "On Hold"
-                                                   ? "secondary"
-                                                   : da === "Pending"
-                                                   ? "warning"
-                                                   : ""
-                                             }`}
-                                          >
-                                             
-                                             <input
-                                                type="checkbox"
-                                                className="custom-control-input "
-                                                id={`checkAll${i}`}
-                                                required=""
-                                             />
-                                             <label
-                                                className="custom-control-label"
-                                                htmlFor={`checkAll${i}`}
-                                             ></label>
-                                          </div>
-                                       ) : da === "Completed" ? (
-                                          <Badge variant="success">
-                                             Completed
-                                             <span className="ml-1 fa fa-check"></span>
+                                
+                                 <td>{d.id}</td>
+                               <td>{d.customer.email}</td>
+                               <td>{d.customer.firstname}</td>
+                               <td>{d.shipping.name},{d.shipping.street},{d.shipping.town_city}</td>
+                               <td>
+                                       {d.status_payment === "Paid" ? (
+                                          <Badge variant="success light">
+                                             Paid
                                           </Badge>
-                                       ) : da === "On Hold" ? (
-                                          <Badge variant="secondary">
-                                             On Hold
-                                             <span className="ml-1 fa fa-ban"></span>
+                                       ) : d.status_payment === "Unpaid" ? (
+                                          <Badge variant="danger light">
+                                             Unpaid
                                           </Badge>
-                                       ) : da === "Pending" ? (
-                                          <Badge variant="warning">
+                                       ) : d.status_payment === "Panding" ? (
+                                          <Badge variant="warning light">
                                              Pending
                                           </Badge>
-                                       ) : da === "Processing" ? (
-                                          <Badge variant="primary">
-                                             Processing
-                                          </Badge>
-                                       ) : ii === 7 ? (
-                                          <Dropdown>
+                                       ) : (
+                                          d.status_payment
+                                       )}
+                                    </td> 
+                               <td>{d.order_value.formatted_with_symbol}</td>
+                               <Dropdown>
                                              <Dropdown.Toggle
                                                 variant=""
                                                 className="table-dropdown icon-false"
@@ -149,11 +159,6 @@ const ProductOrder = () => {
                                                 </Dropdown.Item>
                                              </Dropdown.Menu>
                                           </Dropdown>
-                                       ) : (
-                                          da
-                                       )}
-                                    </td>
-                                 ))}
                               </tr>
                            ))}
                         </tbody>
