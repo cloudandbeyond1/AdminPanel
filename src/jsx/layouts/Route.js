@@ -52,13 +52,19 @@ import AddCustomer from "../components/Customer/AddCustomer";
 import ProductOrder from "../components/Restaurant/ProductOrder";
 import OrderTracking from "../components/Restaurant/OrderTracking";
 
+//Coupon Code
+import AddCoupon from "../components/Coupon/AddCoupon";
+import ListCoupon from "../components/Coupon/ListCoupon";
+//Delivery
+import AddDeliveryBoy from "../components/Delivery/AddDeliveryBoy";
+import ListDeliveryBoy from "../components/Delivery/ListDeliveryBoy";
 
 const Routes = () => {
    const routes = [
       /// Deshborad
-      { url: "Home", component: Home},
+      { url: "", component: Home},
             /// Bootstrap
-      { url: "Dash", component: Dash },
+      
       { url: "Add-Product", component: Addproduct },
       { url: "List-Product", component: Listproduct },
       { url: "application", component: Application },
@@ -94,6 +100,12 @@ const Routes = () => {
       { url: "Add-Customer", component: AddCustomer},
       { url: "Product-Order", component: ProductOrder},
       { url: "Order-Tracking", component: OrderTracking},
+
+      { url: "Add-Coupon", component: AddCoupon},
+		{ url: "List-Coupon", component: ListCoupon},
+
+      { url: "Add-Delivery", component: AddDeliveryBoy},
+      { url: "List-Delivery", component: ListDeliveryBoy},
 
    ];
 

@@ -62,19 +62,17 @@ class SideBar extends Component {
         }
 
       /// Active menu
-      let deshBoard = [
-            "",
-            "analytics",
-            "companies",
-            "statistics",
-			
-         ],
+      let deshBoard = ["","analytics","companies","statistics"],			         
         
          Userlist = ["User-list"],
 
          OrderList = ["New-Order","Cancelled-Order","Completed-Order"],
 
          BannerList=["Add-Banner","List-Banner"],
+
+         CouponCode=["Add-Coupon","List-Coupon"],
+
+         Delivery=["Add-Delivery","List-Delivery"],
 
          Restaurant=["Add-Restaurant","List-Restaurant"],
 
@@ -87,6 +85,8 @@ class SideBar extends Component {
          RestaurantOrderList = ["Product-Order","Order-Tracking"],
 
          Settings = ["Merchant","Shipping","Tax","Notifications"];
+
+          
 
 
       return (
@@ -107,6 +107,30 @@ class SideBar extends Component {
                         <span className="nav-text">Dashboard</span>
                      </Link>                     
                   </li>
+
+
+
+                  {/* <li
+                     className={`${
+                        deshBoard.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                     >
+                        <img src={productsmenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text">Dashboard</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/">Dashboard</Link>
+                        </li>                     
+                        
+                                         
+                     </ul>
+                  </li> */}
+
                   <li
                      className={`${
                         Product.includes(path.slice(1)) ? "mm-active" : ""
@@ -228,7 +252,53 @@ class SideBar extends Component {
                      </ul>
                   </li>
 
-                  
+
+                  <li
+                     className={`${
+                        CouponCode.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Coupon Code</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/Add-Coupon">Add Coupon</Link>
+                        </li>
+                        <li>
+                           <Link to="/List-Coupon">List Coupon</Link>
+                        </li>                       
+                     </ul>
+                  </li>
+
+
+                  <li
+                     className={`${
+                        Delivery.includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        className="has-arrow ai-icon"
+                        to="#"
+                        
+                     >
+                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
+                        <span className="nav-text Product">Delivery Boy</span>
+                     </Link>
+                     <ul >
+                        <li>
+                           <Link to="/Add-Delivery">Add Delivery Boy</Link>
+                        </li>
+                        <li>
+                           <Link to="/List-Delivery">List Delivery Boy</Link>
+                        </li>                       
+                     </ul>
+                  </li>
 
                   <li
                      className={`${
