@@ -15,6 +15,8 @@ import productsmenu from "../../../images/dashicons/productsmenu.png";
 import usermenu from "../../../images/dashicons/usermenu.png";
 import settingsmenu from "../../../images/dashicons/settingmenu.png";
 import customer from "../../../images/dashicons/customerwhite.png";
+import couponmenu from "../../../images/dashicons/couponwhite.png";
+import deliverymenu from "../../../images/dashicons/deliverywhite.png";
 
 /// Menu
 import MetisMenu from "metismenujs";
@@ -70,9 +72,7 @@ class SideBar extends Component {
 
          BannerList=["Add-Banner","List-Banner"],
 
-         CouponCode=["Add-Coupon","List-Coupon"],
-
-         Delivery=["Add-Delivery","List-Delivery"],
+         
 
          Restaurant=["Add-Restaurant","List-Restaurant"],
 
@@ -81,6 +81,10 @@ class SideBar extends Component {
          CategoryList = ["Add-Category","List-Category"],
 
          CustomerList= ["Customer-List","Add-Customer"],
+
+         CouponCode=["Add-Coupon","List-Coupon"],
+
+         Delivery=["Add-Delivery","List-Delivery"],
 
          RestaurantOrderList = ["Product-Order","Order-Tracking"],
 
@@ -252,53 +256,7 @@ class SideBar extends Component {
                      </ul>
                   </li>
 
-
-                  <li
-                     className={`${
-                        CouponCode.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        
-                     >
-                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Coupon Code</span>
-                     </Link>
-                     <ul >
-                        <li>
-                           <Link to="/Add-Coupon">Add Coupon</Link>
-                        </li>
-                        <li>
-                           <Link to="/List-Coupon">List Coupon</Link>
-                        </li>                       
-                     </ul>
-                  </li>
-
-
-                  <li
-                     className={`${
-                        Delivery.includes(path.slice(1)) ? "mm-active" : ""
-                     }`}
-                  >
-                     <Link
-                        className="has-arrow ai-icon"
-                        to="#"
-                        
-                     >
-                        <img src={bannermenu} style={styles.imgicon} className="mr-2"/>
-                        <span className="nav-text Product">Delivery Boy</span>
-                     </Link>
-                     <ul >
-                        <li>
-                           <Link to="/Add-Delivery">Add Delivery Boy</Link>
-                        </li>
-                        <li>
-                           <Link to="/List-Delivery">List Delivery Boy</Link>
-                        </li>                       
-                     </ul>
-                  </li>
+                  
 
                   <li
                      className={`${

@@ -37,11 +37,11 @@ const AddCoupon = () => {
 								<div class="form-group">								
 									<label for="cname">Coupon Code </label>
 									<div class="row">
-								<div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
+								<div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
 									<input type="text" id="ccode" class="form-control" onkeypress="return isNumberKey(event)" maxlength="8" name="ccode" required="" oninput="this.value = this.value.toUpperCase()"/>
 									</div>
 									
-								<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+								<div class="col-md-2 col-lg-2 col-xs-12 col-sm-12">
 									<button id="gen_code" class="btn btn-success"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 									</div>
 									</div>
@@ -109,29 +109,29 @@ const AddCoupon = () => {
 									   </div>
 									   </div>
 									   
-<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-								<div class="form-group">
-									<label for="cname">Coupon Description </label>
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+															<div class="form-group">
+																<label for="cname">Coupon Description </label>
 
-								</div>
-                        <div className="col-sm-10">	
-									  <textarea
-										 className="form-control"
-										 id="val-suggestions"
-										 name="val-suggestions"
-										 rows="5"										 
-									  ></textarea>
-								   </div>
-							</div>							
-								
-							</div>
-                                        
-										
-                                    </div>
-               </div>
-            </div>
-         </div>
-      </Fragment>
+															</div>
+													<div className="col-sm-12">	
+																<textarea
+																	className="form-control"
+																	id="val-suggestions"
+																	name="val-suggestions"
+																	rows="5"										 
+																></textarea>
+															</div>
+														</div>							
+															
+														</div>
+																	
+																	
+																</div>
+										</div>
+										</div>
+									</div>
+								</Fragment>
    );
 };
 
