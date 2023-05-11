@@ -65,18 +65,6 @@ import AddCustomer from "../Customer/AddCustomer";
 import ProductOrder from "../Restaurant/ProductOrder";
 import OrderTracking from "../Restaurant/OrderTracking";
 
-
-
-import AddCoupon from "../Coupon/AddCoupon";
-
-import ListCoupon from "../Coupon/ListCoupon";
-
-import AddDeliveryBoy from "../Delivery/AddDeliveryBoy";
-
-import ListDeliveryBoy from "../Delivery/ListDeliveryBoy";
-
-
-
 const Dash = () => {
    const routes = [
 		/// Deshborad
@@ -112,10 +100,6 @@ const Dash = () => {
 		{ url: "Add-Customer", component: AddCustomer},
 		{ url: "Product-Order", component: ProductOrder},
 		{ url: "Order-Tracking", component: OrderTracking},
-		{ url: "Add-Coupon", component: AddCoupon},
-		{ url: "List-Coupon", component: ListCoupon},
-		{ url: "Add-Delivery", component: AddDeliveryBoy},
-		{ url: "List-Delivery", component: ListDeliveryBoy},
    ];
 
    return (

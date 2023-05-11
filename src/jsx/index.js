@@ -58,6 +58,12 @@ import ProductList from "./components/Products/ProductList";
 import Customerlist from "./components/Customer/Customerlist";
 import AddCustomer from "./components/Customer/AddCustomer";
 import ProductOrder from "./components/Restaurant/ProductOrder";
+import AddCoupon from "./components/Coupon/AddCoupon";
+import ListCoupon from "./components/Coupon/ListCoupon";
+import Home from "./components/Dashboard/Home/Home";
+import AddDeliveryBoy from "./components/Delivery/AddDeliveryBoy";
+import ListDeliveryBoy from "./components/Delivery/ListDeliveryBoy";
+//Coupon Code
 
 
 import AddCoupon from "./components/Coupon/AddCoupon";
@@ -72,6 +78,7 @@ const Markup = () => {
    const routes = [
 		/// Deshborad
 		{ url: "", component: Login },
+		// { url: "Dash", component: Home},
 		
 		{ url: "Add-Product", component: Addproduct },		
 		{ url: "List-Product", component: ListProduct },

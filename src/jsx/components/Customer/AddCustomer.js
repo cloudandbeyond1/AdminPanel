@@ -73,7 +73,7 @@ const AddCustomer = () => {
                                  <div className="row">
                                     <div className="col-md-6 col-sm-6">
                                        <div className="form-group">
-                                          <label>MobilePhone</label>
+                                          <label>Phone Number</label>
                                           <div className="input-group input-icon mb-3">
                                              <div className="input-group-prepend">
                                                 <span
