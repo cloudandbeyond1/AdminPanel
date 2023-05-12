@@ -66,13 +66,11 @@ import ListDeliveryBoy from "./components/Delivery/ListDeliveryBoy";
 //Coupon Code
 
 
-import AddCoupon from "./components/Coupon/AddCoupon";
 
-import ListCoupon from "./components/Coupon/ListCoupon";
 
-import AddDeliveryBoy from "./components/Delivery/AddDeliveryBoy";
 
-import ListDeliveryBoy from "./components/Delivery/ListDeliveryBoy";
+
+
 
 const Markup = () => {
    const routes = [

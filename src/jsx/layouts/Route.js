@@ -67,6 +67,8 @@ import AddDeliveryBoy from "../components/Delivery/AddDeliveryBoy";
 
 import ListDeliveryBoy from "../components/Delivery/ListDeliveryBoy";
 
+import Customerdetail from "../components/Customer/Customerdetail";
+
 const Routes = () => {
    const routes = [
       /// Deshborad
@@ -108,6 +110,7 @@ const Routes = () => {
       { url: "Add-Customer", component: AddCustomer},
       { url: "Product-Order", component: ProductOrder},
       { url: "Order-Tracking", component: OrderTracking},
+      { url: "Customer-Detail", component: Customerdetail},
 
    ];
 

@@ -72,15 +72,13 @@ class SideBar extends Component {
 
          BannerList=["Add-Banner","List-Banner"],
 
-         
-
          Restaurant=["Add-Restaurant","List-Restaurant"],
 
          Product = ["Add-Product","List-Product","Addon-Product"],
 
          CategoryList = ["Add-Category","List-Category"],
 
-         CustomerList= ["Customer-List","Add-Customer"],
+         CustomerList= ["Customer-List","Add-Customer","Customer-Detail"],
 
          CouponCode=["Add-Coupon","List-Coupon"],
 
@@ -329,6 +327,9 @@ class SideBar extends Component {
                         </li>   
                         <li>
                            <Link to="Customer-List">Customer List</Link>
+                        </li>
+                        <li>
+                           <Link to="Customer-Detail">Customer Detail</Link>
                         </li>
                      </ul>
                   </li>

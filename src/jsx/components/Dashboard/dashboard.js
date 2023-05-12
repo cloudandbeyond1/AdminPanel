@@ -64,6 +64,7 @@ import Customerlist from "../Customer/Customerlist";
 import AddCustomer from "../Customer/AddCustomer";
 import ProductOrder from "../Restaurant/ProductOrder";
 import OrderTracking from "../Restaurant/OrderTracking";
+import Customerdetail from "../Customer/Customerdetail";
 
 const Dash = () => {
    const routes = [
@@ -100,6 +101,7 @@ const Dash = () => {
 		{ url: "Add-Customer", component: AddCustomer},
 		{ url: "Product-Order", component: ProductOrder},
 		{ url: "Order-Tracking", component: OrderTracking},
+		{ url: "Customer-Detail", component: Customerdetail },
    ];
 
    return (

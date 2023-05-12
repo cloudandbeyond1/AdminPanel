@@ -58,6 +58,7 @@ import Tax from "./components/Settings/Tax";
 import Shipping from "./components/Settings/Shipping";
 import AddDeliveryBoy from "./components/Delivery/AddDeliveryBoy";
 import ListDeliveryBoy from "./components/Delivery/ListDeliveryBoy";
+import Customerdetail from "./components/Customer/Customerdetail";
 
 const Dash = () => {
    const routes = [
@@ -86,6 +87,7 @@ const Dash = () => {
 		{ url:"Shipping",component:Shipping},
 		{ url: "Add-Delivery", component: AddDeliveryBoy},
       { url: "List-Delivery", component: ListDeliveryBoy},
+	  { url: "Customer-Detail", component: Customerdetail },
 
    ];
 
